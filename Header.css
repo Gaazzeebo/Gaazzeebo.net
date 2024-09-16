@@ -45,8 +45,6 @@ header nav {
     margin-right: 10px !important;
 }
 
-/* Removed Gaazzeebo LLC text and rainbow styling */
-
 /* Navigation Links */
 .nav-links {
     list-style-type: none !important;
@@ -69,13 +67,27 @@ header nav {
     text-decoration: underline !important;
 }
 
-/* Hamburger menu for mobile */
+/* Mobile Styling */
 .menu-toggle {
     display: none; /* Default: hide */
     font-size: 2em;
     cursor: pointer;
 }
 
+.hamburger {
+    display: none; /* Hide hamburger by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ff851b;
+    margin: 4px 0;
+}
+
+/* Hamburger menu for mobile */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Show hamburger on mobile */
@@ -95,23 +107,18 @@ header nav {
     .nav-links.active {
         display: flex; /* Show when hamburger is clicked */
     }
-    
+
     .nav-links li {
         text-align: center;
         margin: 15px 0;
     }
 
     .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: #ff851b;
-        margin: 4px 0;
+        display: flex; /* Show hamburger icon */
     }
 }
 
+/* Mobile menu button interaction */
+.menu-toggle.active + .nav-links {
+    display: flex;
+}
