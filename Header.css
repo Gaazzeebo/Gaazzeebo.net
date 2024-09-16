@@ -121,6 +121,27 @@ header nav {
         text-align: center !important;
         margin: 15px 0 !important;
     }
+
+    header {
+        padding: 11px 0 !important;
+    }
+
+    .logo h1 {
+        font-size: 1.5em !important; /* Reduce font size of the logo text */
+    }
+
+    .small-logo {
+        height: 30px !important; /* Reduce the size of the logo image */
+    }
+
+    .nav-links a {
+        font-size: 1em !important; /* Reduce the font size of navigation links */
+    }
+
+    /* If you want to reduce the padding between the elements in the navigation links */
+    .nav-links {
+        gap: 15px !important; /* Reduce gap between nav links */
+    }
 }
 
 /* Hamburger menu for mobile */
@@ -175,27 +196,4 @@ header nav {
 .mobile-menu a:hover {
     background-color: #ff851b !important; /* Orange background on hover */
     color: white !important; /* White font on hover for visibility */
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 11px 0 !important;
-    }
-
-    .logo h1 {
-        font-size: 1.5em !important; /* Reduce font size of the logo text */
-    }
-
-    .small-logo {
-        height: 30px !important; /* Reduce the size of the logo image */
-    }
-
-    .nav-links a {
-        font-size: 1em !important; /* Reduce the font size of navigation links */
-    }
-
-    /* If you want to reduce the padding between the elements in the navigation links */
-    .nav-links {
-        gap: 15px !important; /* Reduce gap between nav links */
-    }
 }
