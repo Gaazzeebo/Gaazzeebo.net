@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="561Records - A leading record label and recording company empowering artists worldwide.">
+    <title>561Records | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="561Records Logo" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#services" class="scroll-link">Services</a></li>
+                <li><a href="#artists" class="scroll-link">Artists</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
+                <li><a href="#" id="theme-toggle">Toggle Theme</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <div class="video-overlay"></div>
+            <video autoplay muted loop id="hero-video" aria-label="Background video showcasing the vibe of 561Records.">
+                <source src="hero-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content animate__animated animate__fadeInDown">
+                <h2>Your Sound, Our Passion</h2>
+                <p>Join 561Records to bring your music to the world.</p>
+                <button class="btn-primary">Learn More</button>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="parallax"></div>
+            <h2 class="animate__animated animate__fadeInUp">About 561Records</h2>
+            <p class="animate__animated animate__fadeInUp">561Records was founded with the mission to discover and promote emerging musical talent. We are passionate about providing a platform for artists to share their sound with the world.</p>
+        </section>
+        <section class="services" id="services">
+            <h2 class="animate__animated animate__fadeInLeft">Our Services</h2>
+            <ul class="animate__animated animate__fadeInRight">
+                <li>Music Production</li>
+                <li>Artist Management</li>
+                <li>Music Distribution</li>
+                <li>Event Planning</li>
+            </ul>
+        </section>
+        <section class="artists" id="artists">
+            <h2 class="animate__animated animate__fadeInUp">Our Talent</h2>
+            <div class="artist-grid">
+                <!-- Artist profiles will be dynamically loaded here -->
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 class="animate__animated animate__fadeInLeft">What Our Artists Say</h2>
+            <div class="testimonial-slider animate__animated animate__fadeInRight">
+                <div class="testimonial">
+                    <p>"561Records has taken my music career to new heights!"</p>
+                    <span>- Artist Name</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Professional and passionate team, highly recommended!"</p>
+                    <span>- Another Artist</span>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="animate__animated animate__fadeInLeft">Get in Touch</h2>
+            <form id="contact-form" class="animate__animated animate__fadeInRight" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="music-player">
+            <h2 class="animate__animated animate__fadeInUp">Listen to Our Featured Tracks</h2>
+            <div class="music-visualizer">
+                <canvas id="visualizer"></canvas>
+            </div>
+            <audio id="audio-player" controls aria-label="Music player for featured tracks">
+                <source src="track1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="playlist">
+                <ul>
+                    <li><a href="#" data-src="track1.mp3" aria-label="Play Track 1">Track 1</a></li>
+                    <li><a href="#" data-src="track2.mp3" aria-label="Play Track 2">Track 2</a></li>
+                    <li><a href="#" data-src="track3.mp3" aria-label="Play Track 3">Track 3</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="newsletter" aria-label="Newsletter subscription form">
+            <h3>Subscribe to our Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" required aria-required="true">
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-feed">
+            <h3>Latest from Instagram</h3>
+            <div id="instagram-feed"></div>
+        </div>
+        <p>&copy; 2024 561Records. All rights reserved.</p>
+    </footer>
+    <div id="loading" aria-label="Loading screen">
+        <div class="loading-content">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

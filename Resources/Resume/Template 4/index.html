@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple-like Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Bubble container settings */
+    #bubbles-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* Styling for each bubble */
+    .bubble {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    /* Float animation to move bubbles randomly */
+    @keyframes float {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(calc(100vw * (var(--direction-x))), calc(-100vh * (var(--direction-y))));
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white flex flex-col items-center overflow-x-hidden">
+  <!-- Navbar -->
+  <header class="w-full p-6">
+    <nav class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold">MyPortfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#skills" class="nav-link text-gray-600 hover:text-black transition">Skills</a></li>
+        <li><a href="#projects" class="nav-link text-gray-600 hover:text-black transition">Projects</a></li>
+        <li><a href="#experience" class="nav-link text-gray-600 hover:text-black transition">Experience</a></li>
+        <li><a href="#awards" class="nav-link text-gray-600 hover:text-black transition">Awards</a></li>
+        <li><a href="#contact" class="nav-link text-gray-600 hover:text-black transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center mt-16 p-10">
+    <h2 class="text-5xl font-bold text-gray-800">Hi, I'm [Your Name]</h2>
+    <p class="text-xl mt-4 text-gray-600">Welcome to my portfolio. Click to explore!</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="w-full mt-20 p-10 text-center">
+    <h3 class="text-3xl font-bold text-gray-800">Skills</h3>
+    <div class="skills-container grid grid-cols-3 gap-8 mt-10">
+      <div class="skill-card bg-gray-200 p-6 rounded-lg cursor-pointer hover:bg-red-400 transition-all">
+        <p class="text-xl">HTML</p>
+      </div>
+      <div class="skill-card bg-gray-200 p-6 rounded-lg cursor-pointer hover:bg-green-400 transition-all">
+        <p class="text-xl">CSS</p>
+      </div>
+      <div class="skill-card bg-gray-200 p-6 rounded-lg cursor-pointer hover:bg-blue-400 transition-all">
+        <p class="text-xl">JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="w-full mt-20 p-10 text-center">
+    <h3 class="text-3xl font-bold text-gray-800">Projects</h3>
+    <div class="projects-container grid grid-cols-3 gap-8 mt-10">
+      <div class="project-card bg-gray-200 p-6 rounded-lg cursor-pointer hover:bg-yellow-400 transition-all">
+        <p class="text-xl">Project 1</p>
+      </div>
+      <div class="project-card bg-gray-200 p-6 rounded-lg cursor-pointer hover:bg-purple-400 transition-all">
+        <p class="text-xl">Project 2</p>
+      </div>
+      <div class="project-card bg-gray-200 p-6 rounded-lg cursor-pointer hover:bg-orange-400 transition-all">
+        <p class="text-xl">Project 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="w-full mt-20 p-10 text-center">
+    <h3 class="text-3xl font-bold text-gray-800">Work Experience</h3>
+    <div class="experience-container mt-10">
+      <div class="experience-card bg-gray-200 p-6 rounded-lg mb-6">
+        <h4 class="text-xl font-bold">Job Title 1</h4>
+        <p class="text-gray-600">Company Name</p>
+        <p class="text-gray-500">January 2020 - Present</p>
+        <p class="mt-4">Responsibilities and accomplishments in this role.</p>
+      </div>
+      <div class="experience-card bg-gray-200 p-6 rounded-lg mb-6">
+        <h4 class="text-xl font-bold">Job Title 2</h4>
+        <p class="text-gray-600">Company Name</p>
+        <p class="text-gray-500">January 2018 - December 2019</p>
+        <p class="mt-4">Responsibilities and accomplishments in this role.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Achievements Section -->
+  <section id="awards" class="w-full mt-20 p-10 text-center">
+    <h3 class="text-3xl font-bold text-gray-800">Awards & Achievements</h3>
+    <div class="awards-container mt-10">
+      <div class="award-card bg-gray-200 p-6 rounded-lg mb-6">
+        <h4 class="text-xl font-bold">Award Name 1</h4>
+        <p class="text-gray-600">Description of the award or achievement.</p>
+      </div>
+      <div class="award-card bg-gray-200 p-6 rounded-lg mb-6">
+        <h4 class="text-xl font-bold">Award Name 2</h4>
+        <p class="text-gray-600">Description of the award or achievement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="w-full mt-20 p-10 text-center">
+    <h3 class="text-3xl font-bold text-gray-800">Contact</h3>
+    <p class="text-gray-600 mt-4">Get in touch with me!</p>
+  </section>
+
+  <!-- Floating Bubbles -->
+  <div id="bubbles-container"></div>
+
+  <!-- Link to external script.js -->
+  <script src="script.js"></script>
+</body>
+</html>

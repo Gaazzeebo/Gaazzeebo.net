@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our successfully sold luxury properties. Elite Luxury Estates showcases our commitment to excellence in real estate.">
+    <meta name="keywords" content="sold luxury properties, elite estates, luxury real estate sales">
+    <title>Sold Properties - Elite Luxury Estates</title>
+    <link rel="stylesheet" href="sold.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+        "name": "Sold Luxury Properties",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Residence",
+                    "name": "Luxury Modern Villa",
+                    "image": "sold1.jpg",
+                    "description": "Sold for $2,300,000 - A modern villa with stunning amenities.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Beverly Hills",
+                        "addressRegion": "CA"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Residence",
+                    "name": "Penthouse Suite",
+                    "image": "sold2.jpg",
+                    "description": "Sold for $3,800,000 - A luxurious penthouse with panoramic city views.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "New York City",
+                        "addressRegion": "NY"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Residence",
+                    "name": "Beachside Mansion",
+                    "image": "sold3.jpg",
+                    "description": "Sold for $5,500,000 - A beachfront mansion with direct access to the beach.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Malibu",
+                        "addressRegion": "CA"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Residence",
+                    "name": "Mountain Retreat",
+                    "image": "sold4.jpg",
+                    "description": "Sold for $4,200,000 - A peaceful retreat in the mountains with modern amenities.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Aspen",
+                        "addressRegion": "CO"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "Residence",
+                    "name": "Urban Loft",
+                    "image": "sold5.jpg",
+                    "description": "Sold for $1,900,000 - A chic industrial-style loft in the city center.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Chicago",
+                        "addressRegion": "IL"
+                    }
+                }
+            }
+        ]
+    }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Elite Luxury Estates</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sold.html">Sold Properties</a></li>
+                <li><a href="index.html#listings">Available Listings</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <<section class="hero-section" style="background-image: url('bg2-home.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>Our Legacy of Luxury</h1>
+            <p>Discover the elite properties we've had the honor of selling</p>
+        </div>
+    </section>
+
+    <section class="filter-controls">
+        <select id="sortBy" aria-label="Sort by price">
+            <option value="priceHigh">Price: High to Low</option>
+            <option value="priceLow" selected>Price: Low to High</option>
+        </select>
+    </section>
+
+    <section class="sold-section">
+        <h1>Previous Properties Sold</h1>
+        <p class="subtitle">Explore the luxury homes that have found new owners through our exceptional service.</p>
+
+        <div class="sold-gallery" id="propertyContainer">
+            <div class="sold-property" data-id="1" data-price="2300000">
+                <img src="sold1.jpg" alt="Luxury Modern Villa">
+                <div class="property-info">
+                    <h3>Luxury Modern Villa</h3>
+                    <p>Sold for $2,300,000 - A modern villa with stunning amenities.</p>
+                </div>
+            </div>
+            <div class="sold-property" data-id="2" data-price="3800000">
+                <img src="sold2.jpg" alt="Penthouse Suite">
+                <div class="property-info">
+                    <h3>Penthouse Suite</h3>
+                    <p>Sold for $3,800,000 - A luxurious penthouse with panoramic city views.</p>
+                </div>
+            </div>
+            <div class="sold-property" data-id="3" data-price="5500000">
+                <img src="sold3.jpg" alt="Beachside Mansion">
+                <div class="property-info">
+                    <h3>Beachside Mansion</h3>
+                    <p>Sold for $5,500,000 - A beachfront mansion with direct access to the beach.</p>
+                </div>
+            </div>
+            <div class="sold-property" data-id="4" data-price="4200000">
+                <img src="sold4.jpg" alt="Mountain Retreat">
+                <div class="property-info">
+                    <h3>Mountain Retreat</h3>
+                    <p>Sold for $4,200,000 - A peaceful retreat in the mountains with modern amenities.</p>
+                </div>
+            </div>
+            <div class="sold-property" data-id="5" data-price="1900000">
+                <img src="sold5.jpg" alt="Urban Loft">
+                <div class="property-info">
+                    <h3>Urban Loft</h3>
+                    <p>Sold for $1,900,000 - A chic industrial-style loft in the city center.</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="loadMoreBtn">Load More</button>
+    </section>
+
+    <section class="market-insights">
+        <h2>Market Insights</h2>
+        <a href="blog.html">Read our latest article on luxury real estate trends</a>
+    </section>
+
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" aria-label="Close modal">&times;</span>
+            <div class="modal-body">
+                <!-- Carousel and content will be filled dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <footer>
+        <p>&copy; 2024 Elite Luxury Estates. Powered by Gaazzeebo</p>
+        <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="privacy-notice">By inquiring, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+    </footer>
+
+    <script src="sold.js"></script>
+</body>
+</html>

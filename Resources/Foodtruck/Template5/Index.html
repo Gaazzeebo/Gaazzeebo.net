@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add any custom styles here */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl">Food Truck Delight</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Menu</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                    <li><a href="#" class="hover:underline">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Welcome to Food Truck Delight</h2>
+            <p class="text-lg">Savor the flavor on wheels!</p>
+        </section>
+
+        <section id="menu" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Our Menu</h2>
+            <div id="menuItems" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="reviews" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+            <div id="reviewList" class="space-y-4">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+            <form id="reviewForm" class="mt-4">
+                <textarea name="review" id="review" class="w-full p-2 border rounded" placeholder="Leave your review here..." required></textarea>
+                <button type="submit" class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">Submit Review</button>
+            </form>
+        </section>
+
+        <section id="location" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Find Us</h2>
+            <div id="map" class="h-64 w-full bg-gray-300"></div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4 text-center">
+        <p>&copy; 2024 Food Truck Delight</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

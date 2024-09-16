@@ -1,0 +1,67 @@
+{
+    "devices": [
+        {"manufacturer": "Clover", "device": "Flex (3rd Generation)", "status": "In Stock", "pricing": "$527.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Mini LTE / WiFi (3rd Generation)", "status": "In Stock", "pricing": "$708.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Station Duo (w/ P500 Printer & Cash Drawer)", "status": "In Stock", "pricing": "$1,667.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Station Duo (w/ P500 Printer)", "status": "In Stock", "pricing": "$1,601.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Station Solo (w/ P500 Printer & Cash Drawer)", "status": "In Stock", "pricing": "$1,551.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Station Solo (w/ P500 Printer)", "status": "In Stock", "pricing": "$1,485.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Kiosk (w/o Clover Flex)", "status": "In Stock", "pricing": "$2,399.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Kiosk (Includes Clover Flex)", "status": "In Stock", "pricing": "$2,926.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Kiosk Pedestal Stand", "status": "In Stock", "pricing": "$399.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Clover Go Gen 3", "status": "In Stock", "pricing": "$110.00", "fee": "$20.00"},
+        {"manufacturer": "Clover", "device": "Flex Refurb (Gen 2 & Gen 3)", "status": "In Stock", "pricing": "$259.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Mini Refurb (Gen 2 & Gen 3)", "status": "In Stock", "pricing": "$325.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Station Duo (w/ P500 Printer) Refurb", "status": "In Stock", "pricing": "$1,601.00", "fee": "$50.00"},
+        {"manufacturer": "Clover", "device": "Station Solo (Tablet Only) Refurb", "status": "In Stock", "pricing": "$428.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Duo Mini Only (Refurb)", "status": "In Stock", "pricing": "$325.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Duo Tablet Only (Refurb)", "status": "In Stock", "pricing": "$428.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "P500 Only (Refurb)", "status": "In Stock", "pricing": "$109.00", "fee": "$25.00"}
+    ],
+    "starterKits": [
+        {"manufacturer": "Clover", "device": "Starter Kit Station Solo Starter Kit", "status": "In Stock", "pricing": "$138.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Starter Kit Station Duo Starter Kit", "status": "In Stock", "pricing": "$138.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Starter Kit Mini Starter Kit", "status": "In Stock", "pricing": "$59.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Starter Kit Flex Starter Kit", "status": "In Stock", "pricing": "$39.00", "fee": "$10.00"}
+    ],
+    "accessories": [
+        {"manufacturer": "Clover", "device": "Accessory Cash Drawer", "status": "In Stock", "pricing": "$66.00", "fee": "$15.00"},
+        {"manufacturer": "Clover", "device": "Accessory Employee Login Cards", "status": "In Stock", "pricing": "$20.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Flex ADA Pad", "status": "In Stock", "pricing": "$13.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Flex Arm Extender", "status": "In Stock", "pricing": "$59.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Flex Charging Cable for Solo", "status": "In Stock", "pricing": "$11.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Flex Sleeve", "status": "In Stock", "pricing": "$25.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Flex Travel Kit", "status": "In Stock", "pricing": "$50.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Go Cable-Free Stand", "status": "In Stock", "pricing": "$22.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Handheld 2D Scanner (Zebra DS2208)", "status": "In Stock", "pricing": "$132.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Accessory Hands Free 2D Scanner (Zebra DS9308)", "status": "In Stock", "pricing": "$201.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Accessory Clover KDS (Kitchen Display System)", "status": "In Stock", "pricing": "$471.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Clover KDS Countertop Stand", "status": "In Stock", "pricing": "$80.00", "fee": "$0.00"},
+        {"manufacturer": "Clover", "device": "Accessory Clover KDS Wall Mount", "status": "In Stock", "pricing": "$53.00", "fee": "$0.00"},
+        {"manufacturer": "Clover", "device": "Accessory Mini ADA Pad", "status": "In Stock", "pricing": "$14.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Mini Swivel", "status": "In Stock", "pricing": "$57.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Mini Tether Cable", "status": "In Stock", "pricing": "$7.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory PIN Shield", "status": "In Stock", "pricing": "$9.00", "fee": "$10.00"},
+        {"manufacturer": "Clover", "device": "Accessory Weight Scale", "status": "In Stock", "pricing": "$401.00", "fee": "$25.00"}
+    ],
+    "printers": [
+        {"manufacturer": "Clover", "device": "P500 Printer", "status": "In Stock", "pricing": "$285.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Kitchen Printer (Asian)", "status": "In Stock", "pricing": "$444.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Kitchen Printer (English)", "status": "In Stock", "pricing": "$372.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Kitchen Thermal Printer", "status": "In Stock", "pricing": "$258.00", "fee": "$25.00"},
+        {"manufacturer": "Clover", "device": "Epson TM-L90 Label Printer", "status": "In Stock", "pricing": "$516.00", "fee": "$25.00"}
+    ],
+    "otherDevices": [
+        {"manufacturer": "Pax", "device": "A60", "status": "In Stock", "pricing": "$178.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "A77", "status": "In Stock", "pricing": "$399.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "A80", "status": "In Stock", "pricing": "$250.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "A920", "status": "In Stock", "pricing": "$375.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "A920 Pro", "status": "In Stock", "pricing": "$387.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "E600 Station", "status": "In Stock", "pricing": "$455.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "E700 Station", "status": "In Stock", "pricing": "$689.00", "fee": "$50.00"},
+        {"manufacturer": "Pax", "device": "E800 Station", "status": "In Stock", "pricing": "$1,145.00", "fee": "$50.00"},
+        {"manufacturer": "Pax", "device": "Q25 Pin Pad (POS Integrated)", "status": "In Stock", "pricing": "$157.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "S300 Pin Pad (Ethernet)", "status": "Out of Stock", "pricing": "$245.00", "fee": "$25.00"},
+        {"manufacturer": "Pax", "device": "S80", "status": "In Stock", "pricing": "$163.00", "fee": "$25.00"}
+    ]
+}

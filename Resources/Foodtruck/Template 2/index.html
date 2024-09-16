@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Munchies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Mobile Munchies</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-background">
+            <img src="foodtruckbg.jpg" alt="Gourmet food truck scene" class="background-image">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Savor the Journey</h1>
+            <p class="hero-subtitle">Exquisite flavors, delivered on the move.</p>
+            <a href="#menu" class="cta-button">View Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Signature Dishes</h2>
+        <div class="menu-items">
+            <!-- Signature Dish 1 -->
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Burgers">
+                        <h3>Artisan Burgers</h3>
+                        <p>Premium beef burgers made with fresh, organic ingredients.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Artisan Burgers</h3>
+                        <p>Our burgers are crafted with locally sourced beef and a mix of gourmet ingredients.</p>
+                        <p>Ingredients: Beef patty, lettuce, tomato, gourmet cheese, house sauce, sesame bun.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signature Dish 2 -->
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?tacos" alt="Tacos">
+                        <h3>Street Tacos</h3>
+                        <p>Fresh tacos filled with a fusion of bold, spicy flavors.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Street Tacos</h3>
+                        <p>Our tacos are a fusion of spicy flavors wrapped in soft tortillas. Perfect for a quick bite or a full meal!</p>
+                        <p>Ingredients: Grilled chicken, salsa, guacamole, cilantro, soft taco shell.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signature Dish 3 -->
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?fries" alt="Fries">
+                        <h3>Loaded Fries</h3>
+                        <p>Crispy fries topped with gourmet sauces and cheeses.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Loaded Fries</h3>
+                        <p>Our fries are topped with the best sauces and cheeses for an indulgent experience. Great as a side or on their own!</p>
+                        <p>Ingredients: Fries, cheddar cheese, bacon bits, ranch sauce, scallions.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section can add -->
+    <section id="full-menu" class="full-menu-section">
+        <h2>Explore Our Full Menu</h2>
+        <div class="full-menu-items">
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?hot-dog" alt="Hot Dogs">
+                        <h3>Gourmet Hot Dogs</h3>
+                        <p>Delicious gourmet hot dogs with a range of unique toppings.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Gourmet Hot Dogs</h3>
+                        <p>Our hot dogs are made with premium sausages and topped with creative and flavorful ingredients.</p>
+                        <p>Ingredients: Beef sausage, mustard, ketchup, caramelized onions, sesame bun.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?salad" alt="Salads">
+                        <h3>Fresh Salads</h3>
+                        <p>Crisp, fresh salads with a variety of dressings and toppings.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Fresh Salads</h3>
+                        <p>Healthy, crisp salads made with the freshest ingredients.</p>
+                        <p>Ingredients: Romaine lettuce, cherry tomatoes, feta cheese, olive oil, balsamic vinegar.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+                        <h3>Personal Pizzas</h3>
+                        <p>Hand-crafted personal pizzas with fresh ingredients.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Personal Pizzas</h3>
+                        <p>Our pizzas are made with a hand-tossed crust, fresh tomato sauce, and a variety of gourmet toppings.</p>
+                        <p>Ingredients: Mozzarella, fresh tomato sauce, pepperoni, basil, olive oil.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="https://source.unsplash.com/300x200/?dessert" alt="Desserts">
+                        <h3>Decadent Desserts</h3>
+                        <p>Indulge in our selection of sweet and savory desserts.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="card-back">
+                        <h3>Decadent Desserts</h3>
+                        <p>Treat yourself to one of our gourmet desserts.</p>
+                        <p>Ingredients: Chocolate ganache, vanilla cream, pastry dough, fruit glaze.</p>
+                        <button class="go-back-btn">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const cards = document.querySelectorAll('.menu-item');
+            
+                cards.forEach(card => {
+                    const learnMoreBtn = card.querySelector('.learn-more-btn');
+                    const goBackBtn = card.querySelector('.go-back-btn');
+            
+                    learnMoreBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        card.classList.add('flipped');
+                    });
+            
+                    goBackBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        card.classList.remove('flipped');
+                    });
+            
+                    // Prevent card from flipping when clicking anywhere else on the card
+                    card.querySelector('.card').addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+            
+                    // Optional: Flip back if clicking outside the card
+                    document.addEventListener('click', function(e) {
+                        if (!card.contains(e.target) && card.classList.contains('flipped')) {
+                            card.classList.remove('flipped');
+                        }
+                    });
+                });
+            });
+            </script>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <h2>What People Are Saying</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <p>"The best gourmet burgers I’ve ever tasted. Highly recommend!"</p>
+                <h4>- Sarah L.</h4>
+            </div>
+            <div class="review">
+                <p>"Tacos packed with flavor! Great food and great service!"</p>
+                <h4>- Mark T.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Mobile Munchies</h2>
+            <p>At Mobile Munchies, we're passionate about bringing gourmet street food right to your doorstep. From juicy artisan burgers and crispy gourmet fries to exotic tacos, our menu is crafted to satisfy all your cravings. Our mission? To infuse the streets with bold, unforgettable flavors.</p>
+            <div class="cta-about">
+                <a href="#contact" class="cta-button">Discover Our Location</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="map" class="map-section">
+        <div class="container">
+            <h2>Find Us Here</h2>
+            <div id="map-container" class="location-map"></div>
+        </div>
+    </section>
+    
+    <script>
+    function initMap() {
+        // Coordinates for Tampa, Florida
+        const location = { lat: 27.9506, lng: -82.4572 };
+        const map = new google.maps.Map(document.getElementById('map-container'), {
+            center: location,
+            zoom: 15,
+            mapId: 'd90ce7d0d74eec62' // Your map ID
+        });
+    
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Mobile Munchies'
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhJGwnMqiTDnAXM3hXk0iB9zU7hJcoE8s&callback=initMap" async defer></script>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button" aria-label="Send Message">Let's Connect</button>
+            </form>
+        </div>
+    </section>
+    
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        .about-section, .map-section, .contact-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+    
+        .map-section h2, .contact-section h2 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+    
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .cta-button:hover {
+            background-color: #ff9478;
+        }
+    
+        .location-map {
+            height: 400px;
+            width: 100%;
+            margin: 0 auto 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .form-group {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 15px;
+        }
+    
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+    
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+    </style>
+
+    <footer>
+        <p>© 2024 Mobile Munchies | Powered by Gaazzeebo | Follow Us</p>
+        <div class="social-icons">
+            <a href="#FaceBook" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const headerContainer = document.querySelector('.header-container');
+
+    if(menuToggle && navLinks) {
+        // Function to toggle the menu
+        function toggleMenu() {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            
+            // Toggle body overflow to prevent scrolling when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Event listener for the menu toggle
+        menuToggle.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking outside of it
+        document.addEventListener('click', function(event) {
+            const isClickInside = headerContainer.contains(event.target);
+            if (!isClickInside && navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+
+        // Close menu with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+
+        // Optional: Close the menu when a nav link is clicked
+        const navItems = document.querySelectorAll('.nav-links a');
+        navItems.forEach(link => {
+            link.addEventListener('click', function() {
+                if(window.innerWidth <= 768) { // Mobile breakpoint
+                    toggleMenu();
+                }
+            });
+        });
+    }
+
+    // Optional: Add class to header when scrolled
+    window.addEventListener('scroll', function() {
+        if(window.scrollY > 50) {
+            headerContainer.classList.add('scrolled');
+        } else {
+            headerContainer.classList.remove('scrolled');
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>
+ 

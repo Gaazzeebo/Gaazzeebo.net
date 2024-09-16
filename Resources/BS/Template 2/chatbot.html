@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with AEDAN</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="chatbox">
+        <div class="chatbox-header">
+            Chat with AEDAN
+            <button onclick="toggleChat()">Close</button>
+        </div>
+        <div id="chatbox-body" class="chatbox-body"></div>
+        <div class="chatbox-footer">
+            <input id="chatInput" type="text" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <button class="refresh-button" onclick="refreshChat()">Refresh</button>
+        </div>
+    </div>
+    <button onclick="toggleChat()" style="position: fixed; bottom: 20px; right: 20px;">Chat with AEDAN</button>
+    <script src="chatbot.js"></script>
+</body>
+</html>

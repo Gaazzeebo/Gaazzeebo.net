@@ -1,0 +1,114 @@
+[
+    {
+        "title": "Payment Processing",
+        "overview": "MiCamp Solutions provides a wide range of payment processing services designed to help businesses of all sizes manage their transactions efficiently and securely.",
+        "features": [
+            "Seamless Integration: MiCamp ensures that their payment processing solutions can be easily integrated into existing business systems with minimal disruption.",
+            "High Security: Security is a top priority for MiCamp. They implement advanced security measures to protect sensitive payment information.",
+            "Exceptional Customer Support: MiCamp prides itself on providing outstanding customer service."
+        ],
+        "additionalDetails": "MiCamp’s payment processing services support various payment methods, including credit cards, debit cards, and mobile payments.",
+        "sources": [
+            {"name": "MiCamp Solutions Payments", "url": "https://www.micamp.com/payments"},
+            {"name": "MiCamp Overview", "url": "https://www.micamp.com"}
+        ]
+    },
+    {
+        "title": "High-Risk Merchant Services",
+        "overview": "MiCamp specializes in providing tailored payment solutions for high-risk merchants.",
+        "features": [
+            "Customized Solutions: MiCamp works with high-risk merchants to develop payment processing solutions that meet their unique needs.",
+            "Competitive Rates: MiCamp strives to offer competitive processing rates to high-risk merchants.",
+            "Inclusive Service: MiCamp assists businesses with bad credit or those that have been rejected by other payment processors."
+        ],
+        "additionalDetails": "MiCamp’s high-risk merchant services include chargeback management and fraud prevention tools.",
+        "sources": [
+            {"name": "MiCamp High-Risk Solutions", "url": "https://www.micamp.com/high-risk"},
+            {"name": "PYMNTS Article on MiCamp", "url": "https://www.pymnts.com/news/2021/fintech-micamp-solutions-acquires-american-bank-payments/"}
+        ]
+    },
+    {
+        "title": "Zero % Processing (WAVit)",
+        "overview": "MiCamp’s WAVit solution is an innovative payment processing option that aims to eliminate credit card processing fees for merchants.",
+        "features": [
+            "Fee Reduction: WAVit allows merchants to eliminate the costs associated with credit card processing.",
+            "Innovative Technology: The WAVit solution leverages advanced technology to provide a seamless payment experience.",
+            "Merchant Benefits: By eliminating processing fees, merchants can increase their profitability."
+        ],
+        "additionalDetails": "The WAVit solution is customizable, allowing merchants to determine the best way to implement the service charge for their specific business model.",
+        "sources": [
+            {"name": "MiCamp WAVit", "url": "https://www.micamp.com/wavit"},
+            {"name": "MiCamp Solutions Payments", "url": "https://www.micamp.com/payments"}
+        ]
+    },
+    {
+        "title": "Integrated Software Vendor (ISV) Solutions",
+        "overview": "MiCamp offers payment processing solutions specifically designed for software vendors.",
+        "features": [
+            "Developer Support: MiCamp provides extensive support for software vendors to integrate payment processing capabilities.",
+            "Flexibility: Their ISV solutions are flexible and can be tailored to meet the specific needs of various software applications.",
+            "Security: MiCamp ensures that all integrated solutions are secure and compliant with industry standards."
+        ],
+        "additionalDetails": "MiCamp’s ISV solutions support a wide range of payment methods.",
+        "sources": [
+            {"name": "MiCamp ISV Solutions", "url": "https://www.micamp.com/isv"},
+            {"name": "MiCamp Overview", "url": "https://www.micamp.com"}
+        ]
+    },
+    {
+        "title": "Mergers & Acquisitions",
+        "overview": "MiCamp is actively involved in mergers and acquisitions to expand its portfolio and market reach.",
+        "features": [
+            "Strategic Growth: Through acquisitions, MiCamp can quickly expand its capabilities and enter new markets.",
+            "Cost-Effectiveness: Mergers and acquisitions provide a cost-effective way for MiCamp to grow.",
+            "Integration: MiCamp has a proven track record of successfully integrating acquired companies."
+        ],
+        "additionalDetails": "MiCamp’s acquisition strategy includes purchasing companies with complementary services.",
+        "sources": [
+            {"name": "PYMNTS Article on MiCamp Acquisitions", "url": "https://www.pymnts.com/news/2021/fintech-micamp-solutions-acquires-american-bank-payments/"},
+            {"name": "MiCamp Solutions Overview", "url": "https://www.micamp.com"}
+        ]
+    },
+    {
+        "title": "MiCamp Cares",
+        "overview": "MiCamp Cares is the philanthropic arm of MiCamp Solutions, focusing on community engagement and charitable activities.",
+        "features": [
+            "Community Support: MiCamp Cares engages in various initiatives to support local communities.",
+            "Employee Involvement: MiCamp encourages its employees to participate in charitable activities.",
+            "Diverse Programs: MiCamp Cares includes support for a wide range of causes."
+        ],
+        "additionalDetails": "MiCamp Cares collaborates with non-profit organizations and community groups.",
+        "sources": [
+            {"name": "MiCamp Cares", "url": "https://www.micamp.com/cares"},
+            {"name": "MiCamp Solutions Overview", "url": "https://www.micamp.com"}
+        ]
+    },
+    {
+        "title": "MiCamp Sports",
+        "overview": "This program focuses on supporting youth sports and athletic initiatives.",
+        "features": [
+            "Funding: MiCamp Sports provides financial support for youth sports programs.",
+            "Community Engagement: The program aims to promote physical activity and teamwork among young athletes.",
+            "Program Development: MiCamp Sports assists in the development of sports programs in schools and communities."
+        ],
+        "additionalDetails": "MiCamp Sports collaborates with schools, community centers, and sports organizations.",
+        "sources": [
+            {"name": "MiCamp Sports", "url": "https://www.micamp.com/sports"},
+            {"name": "MiCamp Solutions Overview", "url": "https://www.micamp.com"}
+        ]
+    },
+    {
+        "title": "MiCamp Schools",
+        "overview": "MiCamp Schools aims to support educational institutions through financial and material contributions.",
+        "features": [
+            "Educational Support: MiCamp Schools provides resources and funding to schools.",
+            "Technology Integration: The program assists schools in integrating technology into their educational programs.",
+            "Community Impact: By supporting schools, MiCamp aims to create a positive impact on the community."
+        ],
+        "additionalDetails": "MiCamp Schools collaborates with educational institutions to identify their needs and develop tailored support programs.",
+        "sources": [
+            {"name": "MiCamp Schools", "url": "https://www.micamp.com/schools"},
+            {"name": "MiCamp Solutions Overview", "url": "https://www.micamp.com"}
+        ]
+    }
+]

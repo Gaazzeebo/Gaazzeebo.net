@@ -1,0 +1,340 @@
+/* gallery.css */
+
+/* Body and Global Styles */
+body {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for a vintage look */
+    background-color: #f7f3e9; /* Warm, parchment-like background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('antique-pattern.png'); /* Subtle antique pattern background */
+    background-size: 100px 100px; /* Scale the pattern */
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    position: relative;
+    height: 60vh;
+    color: #4d3a2b; /* Deep brown for an antique look */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #e0dbc8, #f5f0e7); /* Soft gradient mimicking aged paper */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #4d3a2b; /* Antique border */
+    border-radius: 10px;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('antique-header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: sepia(40%); /* Add sepia tone for an aged effect */
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 240, 231, 0.8); /* Light parchment overlay */
+    z-index: -1;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #4d3a2b; /* Dark, antique-style text */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+    animation: fadeInDown 1s ease-in-out;
+    border-bottom: 3px solid #4d3a2b; /* Decorative underline */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Back Home Button */
+.btn-back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f7f3e9;
+    background-color: #4d3a2b; /* Deep brown button */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+}
+
+.btn-back-home:hover {
+    background-color: #6f5c43;
+    box-shadow: 0 0 15px #6f5c43, 0 0 30px #6f5c43, 0 0 45px #6f5c43;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #4d3a2b;
+    border: 2px solid #4d3a2b;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #6f5c43;
+    box-shadow: 0 5px 15px rgba(111, 92, 67, 0.3);
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 100px 0;
+    background: #f5f0e7; /* Light, parchment background */
+    border-top: 5px solid #4d3a2b; /* Antique borders */
+    border-bottom: 5px solid #4d3a2b;
+    border-radius: 10px;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #4d3a2b;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Playfair Display', serif; /* Consistent antique font */
+    border-bottom: 3px solid #4d3a2b; /* Decorative underline */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: white;
+    border: 3px solid #4d3a2b; /* Antique frame-like border */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-bottom: 3px solid #4d3a2b; /* Continue the frame-like effect */
+    filter: sepia(20%); /* Add a slight sepia tone to images */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(245, 240, 231, 0.95); /* Parchment-like background */
+    color: #4d3a2b;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4d3a2b;
+}
+
+.gallery-info p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #6f5c43; /* Softer, antique color for descriptions */
+}
+
+/* Project Detail View with Image Carousel */
+.project-detail {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(245, 240, 231, 0.95);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-detail-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 40px;
+    border: 5px solid #4d3a2b; /* Antique-style border */
+    width: 85%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 3px solid #4d3a2b; /* Continue antique frame style */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    min-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: sepia(20%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(77, 58, 43, 0.7); /* Darker, antique controls */
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(77, 58, 43, 0.9);
+}
+
+.project-detail-info {
+    padding: 20px 0;
+}
+
+.project-detail-info h2 {
+    font-size: 3rem;
+    color: #4d3a2b;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #4d3a2b; /* Decorative underline */
+    padding-bottom: 10px;
+}
+
+.project-detail-info p {
+    font-size: 1.4rem;
+    color: #6f5c43;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.project-detail-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #6f5c43;
+}
+
+.project-detail-info ul li {
+    margin-bottom: 15px;
+}
+
+.close {
+    color: #4d3a2b;
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #222;
+}

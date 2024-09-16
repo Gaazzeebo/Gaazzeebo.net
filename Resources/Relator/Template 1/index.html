@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elite Luxury Estates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Elite Luxury Estates</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#listings">Properties</a></li>
+                <li><a href="sold.html">Sold Properties</a></li> <!-- Added Sold Properties Link -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="contact-info">
+                <p>(123) 456-7890</p>
+                <a href="mailto:info@eliteestates.com">info@eliteestates.com</a>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        .hero-section {
+            background-image: url('luxury-home.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh; /* Assuming you want it to take up the full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+    
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better text readability */
+            z-index: 1;
+        }
+    
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    
+    <section id="home" class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>Discover Luxury Living</h1>
+            <p>World-class properties for discerning buyers</p>
+            <a href="#listings" class="cta-button">Explore Listings</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="realtor.jpg" alt="Realtor Profile Photo">
+            <div class="bio">
+                <p>With over 15 years of experience in luxury real estate, I provide exceptional service tailored to meet the needs of high-net-worth clients. Let me help you find your next dream home.</p>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="listings" class="listings-section">
+        <h2>Featured Luxury Properties</h2>
+        <div class="filter-controls">
+            <label for="filter">Filter by:</label>
+            <select id="filter" aria-label="Filter properties by type">
+                <option value="all">All</option>
+                <option value="villa">Villas</option>
+                <option value="mansion">Mansions</option>
+                <option value="retreat">Retreats</option>
+            </select>
+        </div>
+        <div class="property-grid">
+            <article class="property-card" data-type="villa" data-img2="property1-2.jpg" data-img3="property1-3.jpg">
+                <figure class="property-image">
+                    <img src="property1.jpg" alt="Luxury Modern Villa" loading="lazy" aria-describedby="property1-desc">
+                    <figcaption id="property1-desc" class="visually-hidden">Front view of a luxury modern villa with large windows and an elegant design.</figcaption>
+                    <div class="property-overlay">
+                        <button class="view-details" aria-label="View details of Luxury Modern Villa">View Details</button>
+                    </div>
+                </figure>
+                <div class="property-details">
+                    <h3>Luxury Modern Villa</h3>
+                    <p class="price">$2,500,000</p>
+                    <ul class="features" aria-label="Property features">
+                        <li><i class="fas fa-bed" aria-hidden="true"></i> <span class="feature-text">5 Beds</span></li>
+                        <li><i class="fas fa-bath" aria-hidden="true"></i> <span class="feature-text">6 Baths</span></li>
+                        <li><i class="fas fa-ruler-combined" aria-hidden="true"></i> <span class="feature-text">8000 sqft</span></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        
+        <!-- Modal for Property Details -->
+        <div id="propertyModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modal-img" src="" alt="Property Image">
+                <h2 id="modalTitle"></h2>
+                <p id="modalPrice"></p>
+                <div id="modalFeatures"></div>
+                <div class="modal-description">
+                    <p>Description: A luxurious modern villa with breathtaking views, featuring an infinity pool and smart home technology.</p>
+                    <p>Additional Features: Infinity Pool, Smart Home Integration, Private Cinema</p>
+                </div>
+                <button class="prev-photo" aria-label="Previous photo">Previous</button>
+                <button class="next-photo" aria-label="Next photo">Next</button>
+            </div>
+        </div>
+        
+        <!-- Back to top button -->
+        <button id="back-to-top" aria-label="Back to top">Top</button>
+    
+        <div class="property-grid">
+            <article class="property-card" data-type="mansion" data-img2="property2-2.jpg" data-img3="property2-3.jpg">
+                <figure class="property-image">
+                    <img src="property2.jpg" alt="Beachside Mansion" loading="lazy" aria-describedby="property2-desc">
+                    <figcaption id="property2-desc" class="visually-hidden">Exterior view of a luxurious beachside mansion with tropical landscaping.</figcaption>
+                    <div class="property-overlay">
+                        <button class="view-details" aria-label="View details of Beachside Mansion">View Details</button>
+                    </div>
+                </figure>
+                <div class="property-details">
+                    <h3>Beachside Mansion</h3>
+                    <p class="price">$5,000,000</p>
+                    <ul class="features" aria-label="Property features">
+                        <li><i class="fas fa-bed" aria-hidden="true"></i> <span class="feature-text">7 Beds</span></li>
+                        <li><i class="fas fa-bath" aria-hidden="true"></i> <span class="feature-text">8 Baths</span></li>
+                        <li><i class="fas fa-ruler-combined" aria-hidden="true"></i> <span class="feature-text">12,000 sqft</span></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        
+        <!-- Modal for Property Details -->
+        <div id="propertyModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modal-img" src="" alt="Property Image">
+                <h2 id="modalTitle"></h2>
+                <p id="modalPrice"></p>
+                <div id="modalFeatures"></div>
+                <div class="modal-description">
+                    <p id="modalDescription">Description: A stunning mansion right on the beach, with direct access to the sea and a private dock.</p>
+                    <p id="modalAdditionalFeatures">Additional Features: Private Dock, Home Gym, Wine Cellar</p>
+                </div>
+                <button class="prev-photo" aria-label="Previous photo">Previous</button>
+                <button class="next-photo" aria-label="Next photo">Next</button>
+            </div>
+        </div>
+        
+        <!-- Back to top button -->
+        <button id="back-to-top" aria-label="Back to top">Top</button>
+    
+            <!-- Repeat this structure for all other properties -->
+    
+            <div class="property-grid">
+                <article class="property-card" data-type="retreat" data-img2="property3-2.jpg" data-img3="property3-3.jpg">
+                    <figure class="property-image">
+                        <img src="property3.jpg" alt="Mountain Retreat" loading="lazy" aria-describedby="property3-desc">
+                        <figcaption id="property3-desc" class="visually-hidden">A cozy mountain retreat with wooden architecture and surrounded by trees.</figcaption>
+                        <div class="property-overlay">
+                            <button class="view-details" aria-label="View details of Mountain Retreat">View Details</button>
+                        </div>
+                    </figure>
+                    <div class="property-details">
+                        <h3>Mountain Retreat</h3>
+                        <p class="price">$1,800,000</p>
+                        <ul class="features" aria-label="Property features">
+                            <li><i class="fas fa-bed" aria-hidden="true"></i> <span class="feature-text">4 Beds</span></li>
+                            <li><i class="fas fa-bath" aria-hidden="true"></i> <span class="feature-text">5 Baths</span></li>
+                            <li><i class="fas fa-ruler-combined" aria-hidden="true"></i> <span class="feature-text">6000 sqft</span></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Modal for Property Details - Assuming this modal structure is shared among all property cards -->
+            <div id="propertyModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img class="modal-img" src="" alt="Property Image">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalPrice"></p>
+                    <div id="modalFeatures"></div>
+                    <div class="modal-description">
+                        <p id="modalDescription">Description: Secluded in the mountains, this retreat offers peace and panoramic views, ideal for nature lovers.</p>
+                        <p id="modalAdditionalFeatures">Additional Features: Fireplace, Outdoor Hot Tub, Solar Panels</p>
+                    </div>
+                    <button class="prev-photo" aria-label="Previous photo">Previous</button>
+                    <button class="next-photo" aria-label="Next photo">Next</button>
+                </div>
+            </div>
+            
+            <!-- Back to top button -->
+            <button id="back-to-top" aria-label="Back to top">Top</button>
+
+
+            <div class="property-grid">
+                <article class="property-card" data-type="penthouse" data-img2="property4-2.jpg" data-img3="property4-3.jpg">
+                    <figure class="property-image">
+                        <img src="property4.jpg" alt="Urban Penthouse" loading="lazy" aria-describedby="property4-desc">
+                        <figcaption id="property4-desc" class="visually-hidden">A modern urban penthouse with a skyline view from a high-rise building.</figcaption>
+                        <div class="property-overlay">
+                            <button class="view-details" aria-label="View details of Urban Penthouse">View Details</button>
+                        </div>
+                    </figure>
+                    <div class="property-details">
+                        <h3>Urban Penthouse</h3>
+                        <p class="price">$3,200,000</p>
+                        <ul class="features" aria-label="Property features">
+                            <li><i class="fas fa-bed" aria-hidden="true"></i> <span class="feature-text">3 Beds</span></li>
+                            <li><i class="fas fa-bath" aria-hidden="true"></i> <span class="feature-text">4 Baths</span></li>
+                            <li><i class="fas fa-ruler-combined" aria-hidden="true"></i> <span class="feature-text">4500 sqft</span></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Modal for Property Details - This modal structure is shared among all property cards -->
+            <div id="propertyModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img class="modal-img" src="" alt="Property Image">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalPrice"></p>
+                    <div id="modalFeatures"></div>
+                    <div class="modal-description">
+                        <p id="modalDescription">Description: A luxurious penthouse in the heart of the city, offering breathtaking urban vistas and exclusive amenities.</p>
+                        <p id="modalAdditionalFeatures">Additional Features: Rooftop Terrace, City Views, Concierge Service</p>
+                    </div>
+                    <button class="prev-photo" aria-label="Previous photo">Previous</button>
+                    <button class="next-photo" aria-label="Next photo">Next</button>
+                </div>
+            </div>
+            
+            <!-- Back to top button -->
+            <button id="back-to-top" aria-label="Back to top">Top</button>
+
+            <div class="property-grid">
+                <article class="property-card" data-type="loft" data-img2="property5-2.jpg" data-img3="property5-3.jpg">
+                    <figure class="property-image">
+                        <img src="property5.jpg" alt="Industrial Loft" loading="lazy" aria-describedby="property5-desc">
+                        <figcaption id="property5-desc" class="visually-hidden">An industrial loft with exposed brick walls and large windows.</figcaption>
+                        <div class="property-overlay">
+                            <button class="view-details" aria-label="View details of Industrial Loft">View Details</button>
+                        </div>
+                    </figure>
+                    <div class="property-details">
+                        <h3>Industrial Loft</h3>
+                        <p class="price">$950,000</p>
+                        <ul class="features" aria-label="Property features">
+                            <li><i class="fas fa-bed" aria-hidden="true"></i> <span class="feature-text">2 Beds</span></li>
+                            <li><i class="fas fa-bath" aria-hidden="true"></i> <span class="feature-text">2 Baths</span></li>
+                            <li><i class="fas fa-ruler-combined" aria-hidden="true"></i> <span class="feature-text">2000 sqft</span></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Modal for Property Details - This modal structure is shared among all property cards -->
+            <div id="propertyModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img class="modal-img" src="" alt="Property Image">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalPrice"></p>
+                    <div id="modalFeatures"></div>
+                    <div class="modal-description">
+                        <p id="modalDescription">Description: A stylish industrial loft conversion, featuring high ceilings, exposed brick, and an open floor plan.</p>
+                        <p id="modalAdditionalFeatures">Additional Features: Open Floor Plan, Exposed Brick, High Ceilings</p>
+                    </div>
+                    <button class="prev-photo" aria-label="Previous photo">Previous</button>
+                    <button class="next-photo" aria-label="Next photo">Next</button>
+                </div>
+            </div>
+            
+            <!-- Back to top button -->
+            <button id="back-to-top" aria-label="Back to top">Top</button>
+    
+            <!-- Continue with the remaining properties following the same pattern have coded up 
+             to 8 properties so far only displaying 6 to save time
+             property  images can be directly uploaded with property#-# ex. (property1-1.jpg) 
+             can go all trhe way through 4 images per can add more as requested by customer -->
+        </div>
+        <button class="load-more">Load More</button>
+    </section>
+    
+    <style>
+        .listings-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+    
+        .property-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    
+        .property-card {
+            width: calc(100% - 20px);
+            max-width: 350px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+    
+        .property-card:hover {
+            transform: translateY(-10px);
+        }
+    
+        .property-image {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .property-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    
+        .property-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+    
+        .property-card:hover .property-overlay {
+            transform: translateY(0);
+        }
+    
+        .view-details {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    
+        .property-details {
+            padding: 15px;
+            text-align: left;
+        }
+    
+        .property-details h3 {
+            margin-top: 0;
+        }
+    
+        .features {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+        }
+    
+        .features li {
+            display: flex;
+            align-items: center;
+        }
+    
+        .features i {
+            margin-right: 5px;
+        }
+    
+        .load-more {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .load-more:hover {
+            background-color: #0056b3;
+        }
+    
+        .filter-controls {
+            margin-bottom: 20px;
+        }
+    
+        @media (min-width: 768px) {
+            .property-card {
+                width: calc(50% - 20px);
+            }
+        }
+    
+        @media (min-width: 1200px) {
+            .property-card {
+                width: calc(33.333% - 20px);
+            }
+        }
+    </style>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elite Luxury Estates. Powered by Gaazzeebo</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

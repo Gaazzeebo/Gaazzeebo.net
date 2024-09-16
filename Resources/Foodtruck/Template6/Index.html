@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #sidebar {
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100vh;
+            background: #f8f9fa;
+            transition: left 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        #sidebar.active {
+            left: 0;
+        }
+
+        .content {
+            transition: margin-left 0.3s ease;
+            margin-left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+            flex-grow: 1; /* Allow content to grow and center vertically */
+        }
+
+        .content.active {
+            margin-left: 250px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            width: 100%;
+            max-width: 800px;
+            display: none; /* Initially hide all sections */
+        }
+
+        .fade-in.active {
+            opacity: 1;
+            display: block; /* Show active section */
+        }
+
+        #toggleSidebar {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1001;
+        }
+
+        footer {
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div id="sidebar">
+        <nav class="p-4">
+            <ul class="space-y-2">
+                <li><a href="#" class="block p-2 text-gray-800 hover:bg-blue-600 hover:text-white" data-target="about">About Us</a></li>
+                <li><a href="#" class="block p-2 text-gray-800 hover:bg-blue-600 hover:text-white" data-target="menu">Menu</a></li>
+                <li><a href="#" class="block p-2 text-gray-800 hover:bg-blue-600 hover:text-white" data-target="reviews">Reviews</a></li>
+                <li><a href="#" class="block p-2 text-gray-800 hover:bg-blue-600 hover:text-white" data-target="location">Location</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <button id="toggleSidebar" class="text-blue-600 focus:outline-none">
+        ☰
+    </button>
+
+    <main class="content">
+        <div id="about" class="fade-in">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <img src="path-to-your-food-truck-image.jpg" alt="Food Truck Delight" class="w-full h-auto mb-4">
+            <p class="text-lg">Welcome to Food Truck Delight, where we bring gourmet food to your doorstep!</p>
+        </div>
+
+        <div id="menu" class="fade-in">
+            <h2 class="text-2xl font-bold mb-4">Our Menu</h2>
+            <div id="menuItems" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </div>
+
+        <div id="reviews" class="fade-in">
+            <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+            <div id="reviewList" class="space-y-4">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+            <form id="reviewForm" class="mt-4">
+                <textarea name="review" id="review" class="w-full p-2 border rounded" placeholder="Leave your review here..." required></textarea>
+                <button type="submit" class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">Submit Review</button>
+            </form>
+        </div>
+
+        <div id="location" class="fade-in">
+            <h2 class="text-2xl font-bold mb-4">Find Us</h2>
+            <div id="map" class="h-64 w-full bg-gray-300"></div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4 text-center">
+        <p>&copy; 2024 Food Truck Delight</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

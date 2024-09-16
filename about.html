@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us | Gaazzeebo LLC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- Header/Footer styles-->
+        <link rel="stylesheet" href="Header.css">
+        <link rel="stylesheet" href="Footer.css">
+        <link rel="stylesheet" href="MobileDev.css">
+    
+    <style>
+    
+       
+ 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.small-logo {
+    height: 40px; /* Adjust size as necessary */
+    width: auto;
+    margin-right: 10px;
+}
+
+.rainbow-text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 2.8em;
+    letter-spacing: 4px;
+    margin: 0;
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+    color: #ffcc00; /* This color might not be visible due to the rainbow effect, consider removing or adjusting */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7fdbff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff851b;
+    transform: scale(1.05);
+}
+
+/* Added specific styling for the Templates button */
+.nav-links a.templates {
+    color: #7fdbff;
+}
+
+.nav-links a.templates:hover {
+    color: #ff851b;
+}
+
+/* Hamburger menu for mobile view */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 2em;
+    color: #ff851b;
+}
+
+/* Hide the nav links on smaller screens until toggled */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #001f3f;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 0;
+    color: #7fdbff;
+    font-size: 1.5em;
+}
+
+/* Responsive hamburger menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/* Hero section styling */
+.about-hero {
+    background: url('image/about-hero.png') no-repeat center center/cover;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px 5px; /* Equal padding top and bottom */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    background-position: center;
+}
+
+.about-hero h2 {
+    font-size: 5em; /* Larger font for a stronger first impression */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #ff851b, 0 0 30px #ff851b;
+    margin-bottom: 10px; /* Adjust margin to give space between h2 and p */
+}
+
+.about-hero p {
+    font-size: 2.5em;
+    margin-top: 0; /* Adjust or remove if you want less space above the paragraph */
+    text-shadow: 0 0 10px #000;
+}
+
+        /* Glowing text */
+        .glow-blue {
+            color: #7fdbff;
+            animation: glowBlue 1.5s ease-in-out infinite alternate;
+        }
+
+        .glow-orange {
+            color: #ff851b;
+            animation: glowOrange 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowBlue {
+            from {
+                text-shadow: 0 0 10px #7fdbff, 0 0 20px #7fdbff, 0 0 30px #7fdbff;
+            }
+            to {
+                text-shadow: 0 0 20px #7fdbff, 0 0 40px #7fdbff, 0 0 60px #7fdbff;
+            }
+        }
+
+        @keyframes glowOrange {
+            from {
+                text-shadow: 0 0 10px #ff851b, 0 0 20px #ff851b, 0 0 30px #ff851b;
+            }
+            to {
+                text-shadow: 0 0 20px #ff851b, 0 0 40px #ff851b, 0 0 60px #ff851b;
+            }
+        }
+
+        /* About us section */
+.about-us {
+    padding: 50px 50px 100px;
+    background-color: #111;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-info {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+/* New class for the title */
+.about-title {
+    font-size: 5em; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #ff851b; /* Optional: different color to make it stand out */
+    text-transform: uppercase; /* Optional: for stylistic preference */
+    letter-spacing: 2px; /* Spacing between letters for emphasis */
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+        /* Core values section */
+.core-values {
+    padding: 50px 50px 100px; /* Reduced top padding, kept bottom padding for balance */
+    background-color: #001f3f;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.core-values h2 {
+    font-size: 5em; /* Increased size for "Our Core Values" */
+    color: #7fdbff;
+    margin-bottom: 40px; /* Adjusted margin to reduce space while keeping some separation */
+}
+
+.values-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 60px;
+}
+
+.value-item {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+.value-item:hover {
+    transform: translateY(-15px);
+}
+
+.value-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.value-item h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #7fdbff;
+}
+
+.value-item p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+       /* Founder and Co-Founder message sections */
+.founder-message, .cofounder-message {
+    padding: 100px 50px;
+    background-color: #111;
+    text-align: center;
+}
+
+.founder-message h2, .cofounder-message h2 {
+    font-size: 2.5em; /* Keeping this as is for now, adjust if needed */
+    margin-bottom: 40px;
+    color: #ff851b;
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.founder-message img, .cofounder-message img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #7fdbff;
+}
+
+.founder-message p, .cofounder-message p {
+    font-size: 1.3em; /* This size could be adjusted to match other content if necessary */
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Call to action */
+.cta-section {
+    padding: 50px;
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 5em; /* Matches the founder/co-founder title size */
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.3em; /* Adjusted to match the message paragraphs for consistency */
+    margin-bottom: 30px;
+}
+
+        @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #ff851b, 0 0 20px #ff851b, 0 0 30px #ff851b; }
+    50% { box-shadow: 0 0 20px #ff851b, 0 0 30px #ff851b, 0 0 40px #ffcc00; }
+    100% { box-shadow: 0 0 10px #ff851b, 0 0 20px #ff851b, 0 0 30px #ff851b; }
+}
+
+.cta-btn {
+    /* Base button styles */
+    background: linear-gradient(45deg, #ff851b, #ff4500, #ffcc00, #ff4500, #ff851b);
+    background-size: 400% 400%;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+    animation: gradientShift 10s ease infinite;
+    
+    /* Text styling */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    /* 3D effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: -1;
+}
+
+.cta-btn:hover::before {
+    opacity: 1;
+}
+
+.cta-btn:hover {
+    animation: gradientShift 5s ease infinite, glow 1.5s ease infinite;
+    transform: scale(1.1) rotate(3deg);
+}
+
+.cta-btn:active {
+    transform: scale(1.05);
+    animation: none;
+    background-size: 100% 100%;
+    transition: transform 0.1s, background-size 0.1s;
+}
+
+/* Ripple effect */
+.cta-btn .ripple {
+    position: absolute;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 100%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Focus state for accessibility */
+.cta-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 133, 27, 0.5), 0 0 10px 5px rgba(255, 133, 27, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-icons .glowing-icon {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+}
+        /* Particle styling */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            50% {
+                transform: translateY(-20px) translateX(20px);
+            }
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .message-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .founder-message img, .cofounder-message img {
+                width: 200px;
+            }
+
+            .about-hero h2 {
+                font-size: 2.8em;
+            }
+
+            .founder-message p, .cofounder-message p {
+                text-align: center;
+            }
+
+            .values-grid {
+                flex-direction: column; /* Stack core values vertically on small screens */
+            }
+        }
+    </style>
+</head>
+<body class="about-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/gaazzeebo-logo.png" alt="Gaazzeebo Logo" class="small-logo">
+                <h1 class="rainbow-text">Gaazzeebo LLC</h1>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <!-- Hamburger menu (mobile) -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="templates.html">Templates</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <h2 class="about-title"><span class="glow-blue">Who We Are</span></h2>
+            <div class="about-grid">
+                <div class="about-info">
+                    <p><strong>Gaazzeebo LLC</strong> is a <span class="glow-orange">premier software company</span> located in the heart of Tampa, Florida. We specialize in designing and developing cutting-edge websites that help businesses connect with their target audiences in <span class="glow-blue">powerful</span> and meaningful ways.</p>
+                    <p>Since our founding, we have strived to push the boundaries of <span class="glow-orange">innovation</span>, providing top-tier, secure, and user-friendly digital experiences. Our team is comprised of industry experts who are passionate about helping businesses of all sizes <span class="glow-blue">grow</span> and thrive online.</p>
+                    <p><strong>Our Mission:</strong> To deliver personalized and innovative web solutions that empower businesses to establish a <span class="glow-orange">robust digital footprint</span>.</p>
+                </div>
+                <div class="about-image">
+                    <img src="image/about-us.jpg" alt="Gaazzeebo LLC Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="core-values">
+        <div class="container">
+            <h2>Our <span class="glow-blue">Core Values</span></h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <img src="image/innovation-icon.png" alt="Innovation Icon">
+                    <h3><span class="glow-blue">Innovation</span></h3>
+                    <p>We stay at the forefront of web technology to ensure our clients always receive modern, advanced solutions.</p>
+                </div>
+                <div class="value-item">
+                    <img src="image/security-icon.png" alt="Security Icon">
+                    <h3><span class="glow-blue">Security</span></h3>
+                    <p>Security is a top priority in everything we build. Our solutions are designed to keep your data safe and secure.</p>
+                </div>
+                <div class="value-item">
+                    <img src="image/teamwork-icon.png" alt="Teamwork Icon">
+                    <h3><span class="glow-blue">Teamwork</span></h3>
+                    <p>We work closely with our clients, understanding their needs and providing personalized solutions that meet their business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="founder-message">
+        <div class="container">
+            <h2>A Vision from Our <span class="glow-orange">Founder</span></h2>
+            <div class="message-content">
+                <img src="image/founder.jpg" alt="Founder Jack Liselli" class="founder-image">
+                <blockquote>
+                    <p>"At Gaazzeebo LLC, we're not just building businesses; we're crafting legacies. Every project we embark upon is fueled by our unwavering belief in the <span class="glow-blue">power of innovation</span>. Here, we transform bold ideas into tangible successes, pushing boundaries to redefine what's possible. Our journey is one of <span class="glow-orange">passion, precision, and perseverance</span>. Whether you're taking your first steps or striding towards new horizons, we're committed to illuminating your path in the <span class="glow-blue">digital universe</span>."</p>
+                    <cite>– Jack Liselli, Founder & CEO of Gaazzeebo LLC</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="cofounder-message">
+        <div class="container">
+            <h2>A Vision from Our <span class="glow-orange">Co-Founder & CFO</span></h2>
+            <div class="message-content">
+                <img src="image/cofounder.jpg" alt="Co-Founder Carter Watts" class="cofounder-image">
+                <blockquote>
+                    <p>"At Gaazzeebo LLC, our mission transcends mere financial stewardship; we're architects of <span class="glow-blue">economic innovation</span>. My role is to ensure that our fiscal strategies not only support but propel our creative ventures into realms of unprecedented growth. Here, every financial decision is a step towards crafting a future where <span class="glow-orange">value creation</span> and <span class="glow-blue">technological advancement</span> go hand in hand. Together with our team, we're not just planning for the next quarter; we're envisioning the next era of digital excellence."</p>
+                    <cite>– Carter Watts, Co-Founder & CFO of Gaazzeebo LLC</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to <span class="glow-blue">Elevate</span> Your Online Presence?</h2>
+            <p>Let us build the website your business deserves. Get in touch with us today and let's create something <span class="glow-orange">remarkable</span>.</p>
+            <a href="contact.html" class="cta-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2024 Gaazzeebo LLC. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="social-call">Connect with us:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gaazzeebo" target="_blank" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f glowing-icon"></i></a>
+                <a href="https://www.twitter.com/gaazzeebo" target="_blank" aria-label="Follow us on X"><i class="fab fa-twitter glowing-icon"></i></a>
+                <a href="https://www.instagram.com/gaazzeebo" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram glowing-icon"></i></a>
+                <a href="https://www.linkedin.com/company/gaazzeebo" target="_blank" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in glowing-icon"></i></a>
+                <a href="https://www.youtube.com/channel/gaazzeebo" target="_blank" aria-label="Watch us on YouTube"><i class="fab fa-youtube glowing-icon"></i></a>
+                <a href="https://www.tiktok.com/@gaazzeebo" target="_blank" aria-label="Follow us on TikTok"><i class="fab fa-tiktok glowing-icon"></i></a>
+            </div>
+            <p class="tagline">Innovation at your fingertips.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close the mobile menu by default
+        document.addEventListener('DOMContentLoaded', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Cache DOM elements
+
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Smooth Scroll for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+   
+    // Particle Effect
+    const createParticles = () => {
+        const particleCount = 80;
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            
+            const randomColor = Math.random();
+            if (randomColor < 0.4) {
+                particle.style.backgroundColor = 'rgba(0, 191, 255, 1)';
+                particle.style.boxShadow = '0 0 15px rgba(0, 191, 255, 0.8), 0 0 30px rgba(0, 191, 255, 0.6)';
+            } else if (randomColor < 0.8) {
+                particle.style.backgroundColor = 'rgba(255, 165, 0, 1)';
+                particle.style.boxShadow = '0 0 15px rgba(255, 165, 0, 0.8), 0 0 30px rgba(255, 165, 0, 0.6)';
+            } else {
+                particle.style.background = 'linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet)';
+                particle.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6)';
+            }
+
+            particle.style.top = `${Math.random() * window.innerHeight}px`;
+            particle.style.left = `${Math.random() * window.innerWidth}px`;
+            particle.style.width = particle.style.height = `${Math.random() * 10 + 5}px`;
+            particle.style.animationDuration = `${Math.random() * 10 + 10}s`;
+
+            document.body.appendChild(particle);
+        }
+    };
+
+    // Responsive Adjustments
+    const adjustForDevice = () => {
+        const scale = window.innerWidth < 768 ? 0.6 : window.innerWidth < 1024 ? 0.8 : 1;
+        logo.style.transform = `scale(${scale})`;
+
+        document.querySelectorAll('.particle').forEach(particle => {
+            const size = window.innerWidth < 768 ? `${Math.random() * 5 + 2}px` : `${Math.random() * 10 + 5}px`;
+            particle.style.width = particle.style.height = size;
+        });
+    };
+
+    window.addEventListener('resize', adjustForDevice);
+    adjustForDevice();
+    createParticles();
+
+    // Ripple Effect for CTA Buttons
+    document.querySelectorAll('.cta-btn').forEach(button => {
+        button.addEventListener('click', function (e) {
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            this.appendChild(ripple);
+
+            const diameter = Math.max(this.clientWidth, this.clientHeight);
+            const radius = diameter / 2;
+
+            ripple.style.width = ripple.style.height = `${diameter}px`;
+            ripple.style.left = `${e.clientX - this.offsetLeft - radius}px`;
+            ripple.style.top = `${e.clientY - this.offsetTop - radius}px`;
+
+            ripple.addEventListener('animationend', () => {
+                ripple.remove();
+            });
+        });
+    });
+});
+    </script>
+</body>
+</html>

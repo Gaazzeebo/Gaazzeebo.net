@@ -1,0 +1,516 @@
+:root {
+    --primary-color: #ff9900;
+    --text-color: #333;
+    --bg-color: #f5f5f7;
+    --modal-bg: rgba(0, 0, 0, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    cursor: url('custom-cursor.png'), auto;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    color: white;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.sold-section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.sold-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.sold-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sold-property {
+    width: calc(33% - 20px);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sold-property:hover {
+    transform: translateY(-5px);
+}
+
+.sold-property img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    loading: lazy;
+}
+
+.property-info {
+    padding: 20px;
+}
+
+.property-info h3 {
+    margin-bottom: 10px;
+}
+
+.property-info p {
+    color: #666;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--modal-bg);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    loading: lazy;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ff8c00;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-section h1 {
+        font-size: 48px;
+    }
+    .sold-property {
+        width: 100%;
+    }
+    .modal-content {
+        width: 90%;
+    }
+    .carousel img {
+        height: 300px;
+    }
+}
+
+/* For screens up to 480px wide */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px; /* Reduced font size for smaller screens */
+    }
+    .hero-section h1 {
+        font-size: 28px; /* Adjusted for readability */
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
+    .sold-section h1 {
+        font-size: 24px;
+    }
+    .sold-gallery {
+        gap: 10px; /* Less gap for smaller screens */
+    }
+    .sold-property img, .carousel img {
+        height: 150px; /* Uniform height for images */
+    }
+    #scrollToTopBtn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    /* Ensure elements stack vertically */
+    .navbar, .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* For screens between 481px and 600px */
+@media (min-width: 481px) and (max-width: 600px) {
+    .hero-section h1 {
+        font-size: 32px;
+    }
+    .sold-property img, .carousel img {
+        height: 180px;
+    }
+    /* Adjust navbar for slightly larger screens but still mobile */
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+/* Touchscreen adjustments for all touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .nav-links li a {
+        padding: 15px; /* More padding for touch targets */
+        font-size: 18px; /* Larger font for better touch interaction */
+    }
+    .button, #scrollToTopBtn {
+        padding: 15px 20px; /* Larger touch targets */
+        font-size: 18px;
+    }
+}
+
+/* General responsive tweaks for small screens */
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 50px 15px; /* Less padding on sides */
+    }
+    .sold-section {
+        padding: 30px 15px;
+    }
+    .carousel {
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+}
+
+/*ments for very small screens */
+@media (max-width: 320px) {
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        font-size: 1px;
+    }
+    .sold-section h1 {
+        font-size: 28px;
+    }
+    .-property img {
+        height: 150px;
+    }
+    .img {
+        height: 150px;
+    }
+}
+
+/* Ensure are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional responsive utility classes */
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Hide elements on small screens */
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none    }
+}
+
+/* Show elements only on mobile */
+@media (max-width: 768px) {
+    .show-on-mobile {
+        display: block;
+    }
+}
+
+/* Ensure modal is full screen on mobile */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+    .carousel {
+        height: 100%;
+    }
+    .carousel img {
+        height: auto;
+        max-height: 100%;
+    }
+}
+
+/* Adjust button size for better touch interaction */
+@media (max-width: 480px) {
+    .close {
+        font-size: 24px;
+    }
+}
+
+/* Responsive font sizes */
+html {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Enhance readability on smaller screens */
+@media screen and (max-width: 480px) {
+    body {
+        line-height: 1.4;
+    }
+}
+
+/* Adjust padding and margins for better spacing on mobile */
+@media screen and (max-width: 768px) {
+    .sold-section, .hero-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .property-info {
+        padding: 15px;
+    }
+}
+
+/* Make sure the header doesn't cover content when the screen is small */
+@media screen and (max-width: 768px) {
+    .header {
+        position: sticky;
+    }
+    body {
+        padding-top: 60px; /* Assuming header height is about 60px */
+    }
+}
+
+/* Responsive video or embed content */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure forms are usable on mobile */
+input[type="text"], input[type="email"], textarea {
+    font-size: 16px; /* Prevents zoom on mobile devices */
+}
+
+/* Adjusting for landscape orientation on small devices */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 200vh; /* Adjust based on your content */
+    }
+}
+
+/* This ensures that all elements are contained within the viewport width */
+* {
+    max-width: 100%; /* Prevents horizontal overflow */
+}

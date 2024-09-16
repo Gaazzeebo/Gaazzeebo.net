@@ -1,0 +1,919 @@
+{
+    "posSystems": [
+        {
+            "name": {
+                "en": "POS System 1",
+                "es": "Sistema POS 1",
+                "fr": "Système POS 1",
+                "de": "POS-System 1"
+            },
+            "category": {
+                "en": "Retail",
+                "es": "Minorista",
+                "fr": "Détail",
+                "de": "Einzelhandel"
+            },
+            "gateways": ["Industrial Network Gateways", "IoT Gateways"],
+            "industries": {
+                "en": ["Retail", "Fashion"],
+                "es": ["Minorista", "Moda"],
+                "fr": ["Détail", "Mode"],
+                "de": ["Einzelhandel", "Mode"]
+            },
+            "description": {
+                "en": "A comprehensive POS system for retail businesses.",
+                "es": "Un sistema POS integral para negocios minoristas.",
+                "fr": "Un système POS complet pour les commerces de détail.",
+                "de": "Ein umfassendes POS-System für Einzelhandelsunternehmen."
+            },
+            "price": {
+                "en": "$99/month",
+                "es": "$99/mes",
+                "fr": "99$/mois",
+                "de": "99$/Monat"
+            },
+            "rating": 4.5,
+            "software": [
+                {
+                    "name": {
+                        "en": "RetailPOS",
+                        "es": "RetailPOS",
+                        "fr": "RetailPOS",
+                        "de": "RetailPOS"
+                    },
+                    "supportedGateways": ["Gateway A", "Gateway B"],
+                    "supportedIndustries": {
+                        "en": ["Retail", "Fashion"],
+                        "es": ["Minorista", "Moda"],
+                        "fr": ["Détail", "Mode"],
+                        "de": ["Einzelhandel", "Mode"]
+                    },
+                    "features": {
+                        "en": ["Inventory Management", "Customer Management", "Sales Reporting"],
+                        "es": ["Gestión de Inventarios", "Gestión de Clientes", "Informes de Ventas"],
+                        "fr": ["Gestion des Stocks", "Gestion des Clients", "Rapports de Ventes"],
+                        "de": ["Bestandsverwaltung", "Kundenverwaltung", "Verkaufsberichte"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "John Doe",
+                    "comment": {
+                        "en": "Great POS system for my retail store!",
+                        "es": "¡Gran sistema POS para mi tienda minorista!",
+                        "fr": "Super système POS pour mon magasin de détail!",
+                        "de": "Tolles POS-System für meinen Einzelhandelsladen!"
+                    },
+                    "rating": 5
+                },
+                {
+                    "user": "Jane Smith",
+                    "comment": {
+                        "en": "Very user-friendly and efficient.",
+                        "es": "Muy fácil de usar y eficiente.",
+                        "fr": "Très convivial et efficace.",
+                        "de": "Sehr benutzerfreundlich und effizient."
+                    },
+                    "rating": 4
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "POS System 2",
+                "es": "Sistema POS 2",
+                "fr": "Système POS 2",
+                "de": "POS-System 2"
+            },
+            "category": {
+                "en": "Restaurant",
+                "es": "Restaurante",
+                "fr": "Restaurant",
+                "de": "Restaurant"
+            },
+            "gateways": ["IoT Gateways", "Security Gateways"],
+            "industries": {
+                "en": ["Food and Beverage"],
+                "es": ["Alimentos y Bebidas"],
+                "fr": ["Alimentation et Boissons"],
+                "de": ["Lebensmittel und Getränke"]
+            },
+            "description": {
+                "en": "An efficient POS system for restaurants and cafes.",
+                "es": "Un sistema POS eficiente para restaurantes y cafés.",
+                "fr": "Un système POS efficace pour les restaurants et cafés.",
+                "de": "Ein effizientes POS-System für Restaurants und Cafés."
+            },
+            "price": {
+                "en": "$79/month",
+                "es": "$79/mes",
+                "fr": "79$/mois",
+                "de": "79$/Monat"
+            },
+            "rating": 4.2,
+            "software": [
+                {
+                    "name": {
+                        "en": "DinePOS",
+                        "es": "DinePOS",
+                        "fr": "DinePOS",
+                        "de": "DinePOS"
+                    },
+                    "supportedGateways": ["Gateway C", "Gateway D"],
+                    "supportedIndustries": {
+                        "en": ["Food and Beverage"],
+                        "es": ["Alimentos y Bebidas"],
+                        "fr": ["Alimentation et Boissons"],
+                        "de": ["Lebensmittel und Getränke"]
+                    },
+                    "features": {
+                        "en": ["Table Management", "Menu Customization", "Order Tracking"],
+                        "es": ["Gestión de Mesas", "Personalización del Menú", "Seguimiento de Pedidos"],
+                        "fr": ["Gestion des Tables", "Personnalisation du Menu", "Suivi des Commandes"],
+                        "de": ["Tischverwaltung", "Menüanpassung", "Bestellverfolgung"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Emily Johnson",
+                    "comment": {
+                        "en": "Perfect for my restaurant business.",
+                        "es": "Perfecto para mi negocio de restaurante.",
+                        "fr": "Parfait pour mon entreprise de restaurant.",
+                        "de": "Perfekt für mein Restaurantgeschäft."
+                    },
+                    "rating": 4
+                },
+                {
+                    "user": "Michael Brown",
+                    "comment": {
+                        "en": "Good features but a bit expensive.",
+                        "es": "Buenas características pero un poco caro.",
+                        "fr": "Bonnes fonctionnalités mais un peu cher.",
+                        "de": "Gute Funktionen, aber etwas teuer."
+                    },
+                    "rating": 3.5
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "POS System 3",
+                "es": "Sistema POS 3",
+                "fr": "Système POS 3",
+                "de": "POS-System 3"
+            },
+            "category": {
+                "en": "Hospitality",
+                "es": "Hospitalidad",
+                "fr": "Hôtellerie",
+                "de": "Gastgewerbe"
+            },
+            "gateways": ["Gateway E", "Gateway F"],
+            "industries": {
+                "en": ["Hotels", "Resorts"],
+                "es": ["Hoteles", "Resorts"],
+                "fr": ["Hôtels", "Resorts"],
+                "de": ["Hotels", "Resorts"]
+            },
+            "description": {
+                "en": "A robust POS system for the hospitality industry.",
+                "es": "Un sistema POS robusto para la industria de la hospitalidad.",
+                "fr": "Un système POS robuste pour l'industrie de l'hôtellerie.",
+                "de": "Ein robustes POS-System für das Gastgewerbe."
+            },
+            "price": {
+                "en": "$129/month",
+                "es": "$129/mes",
+                "fr": "129$/mois",
+                "de": "129$/Monat"
+            },
+            "rating": 4.7,
+            "software": [
+                {
+                    "name": {
+                        "en": "HospPOS",
+                        "es": "HospPOS",
+                        "fr": "HospPOS",
+                        "de": "HospPOS"
+                    },
+                    "supportedGateways": ["Gateway E", "Gateway F"],
+                    "supportedIndustries": {
+                        "en": ["Hotels", "Resorts"],
+                        "es": ["Hoteles", "Resorts"],
+                        "fr": ["Hôtels", "Resorts"],
+                        "de": ["Hotels", "Resorts"]
+                    },
+                    "features": {
+                        "en": ["Room Booking", "Service Management", "Billing Integration"],
+                        "es": ["Reserva de Habitaciones", "Gestión de Servicios", "Integración de Facturación"],
+                        "fr": ["Réservation de Chambres", "Gestion des Services", "Intégration de la Facturation"],
+                        "de": ["Zimmerbuchung", "Dienstleistungsmanagement", "Abrechnungsintegration"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Sarah Wilson",
+                    "comment": {
+                        "en": "Excellent for hotel management.",
+                        "es": "Excelente para la gestión hotelera.",
+                        "fr": "Excellent pour la gestion hôtelière.",
+                        "de": "Ausgezeichnet für das Hotelmanagement."
+                    },
+                    "rating": 5
+                },
+                {
+                    "user": "David Lee",
+                    "comment": {
+                        "en": "Very comprehensive and reliable.",
+                        "es": "Muy completo y confiable.",
+                        "fr": "Très complet et fiable.",
+                        "de": "Sehr umfassend und zuverlässig."
+                    },
+                    "rating": 4.5
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "POS System 4",
+                "es": "Sistema POS 4",
+                "fr": "Système POS 4",
+                "de": "POS-System 4"
+            },
+            "category": {
+                "en": "Healthcare",
+                "es": "Salud",
+                "fr": "Santé",
+                "de": "Gesundheitswesen"
+            },
+            "gateways": ["Gateway G", "Gateway H"],
+            "industries": {
+                "en": ["Clinics", "Hospitals"],
+                "es": ["Clínicas", "Hospitales"],
+                "fr": ["Cliniques", "Hôpitaux"],
+                "de": ["Kliniken", "Krankenhäuser"]
+            },
+            "description": {
+                "en": "A specialized POS system for healthcare facilities.",
+                "es": "Un sistema POS especializado para instalaciones de salud.",
+                "fr": "Un système POS spécialisé pour les établissements de santé.",
+                "de": "Ein spezialisiertes POS-System für Gesundheitseinrichtungen."
+            },
+            "price": {
+                "en": "$149/month",
+                "es": "$149/mes",
+                "fr": "149$/mois",
+                "de": "149$/Monat"
+            },
+            "rating": 4.8,
+            "software": [
+                {
+                    "name": {
+                        "en": "HealthPOS",
+                        "es": "HealthPOS",
+                        "fr": "HealthPOS",
+                        "de": "HealthPOS"
+                    },
+                    "supportedGateways": ["Gateway G", "Gateway H"],
+                    "supportedIndustries": {
+                        "en": ["Clinics", "Hospitals"],
+                        "es": ["Clínicas", "Hospitales"],
+                        "fr": ["Cliniques", "Hôpitaux"],
+                        "de": ["Kliniken", "Krankenhäuser"]
+                    },
+                    "features": {
+                        "en": ["Patient Management", "Appointment Scheduling", "Medical Billing"],
+                        "es": ["Gestión de Pacientes", "Programación de Citas", "Facturación Médica"],
+                        "fr": ["Gestion des Patients", "Planification des Rendez-vous", "Facturation Médicale"],
+                        "de": ["Patientenmanagement", "Terminplanung", "Medizinische Abrechnung"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Laura Martinez",
+                    "comment": {
+                        "en": "Ideal for clinic management.",
+                        "es": "Ideal para la gestión de clínicas.",
+                        "fr": "Idéal pour la gestion des cliniques.",
+                        "de": "Ideal für das Klinikmanagement."
+                    },
+                    "rating": 5
+                },
+                {
+                    "user": "Robert Garcia",
+                    "comment": {
+                        "en": "Helps streamline hospital operations.",
+                        "es": "Ayuda a optimizar las operaciones hospitalarias.",
+                        "fr": "Aide à rationaliser les opérations hospitalières.",
+                        "de": "Hilft, den Krankenhausbetrieb zu rationalisieren."
+                    },
+                    "rating": 4.7
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "POS System 5",
+                "es": "Sistema POS 5",
+                "fr": "Système POS 5",
+                "de": "POS-System 5"
+            },
+            "category": {
+                "en": "Fitness",
+                "es": "Aptitud",
+                "fr": "Fitness",
+                "de": "Fitness"
+            },
+            "gateways": ["Gateway I", "Gateway J"],
+            "industries": {
+                "en": ["Gyms", "Fitness Centers"],
+                "es": ["Gimnasios", "Centros de Fitness"],
+                "fr": ["Salles de Gym", "Centres de Fitness"],
+                "de": ["Fitnessstudios", "Fitnesscenter"]
+            },
+            "description": {
+                "en": "An all-in-one POS system for fitness centers.",
+                "es": "Un sistema POS todo en uno para centros de fitness.",
+                "fr": "Un système POS tout-en-un pour les centres de fitness.",
+                "de": "Ein All-in-One POS-System für Fitnesscenter."
+            },
+            "price": {
+                "en": "$89/month",
+                "es": "$89/mes",
+                "fr": "89$/mois",
+                "de": "89$/Monat"
+            },
+            "rating": 4.3,
+            "software": [
+                {
+                    "name": {
+                        "en": "FitPOS",
+                        "es": "FitPOS",
+                        "fr": "FitPOS",
+                        "de": "FitPOS"
+                    },
+                    "supportedGateways": ["Gateway I", "Gateway J"],
+                    "supportedIndustries": {
+                        "en": ["Gyms", "Fitness Centers"],
+                        "es": ["Gimnasios", "Centros de Fitness"],
+                        "fr": ["Salles de Gym", "Centres de Fitness"],
+                        "de": ["Fitnessstudios", "Fitnesscenter"]
+                    },
+                    "features": {
+                        "en": ["Membership Management", "Class Scheduling", "Payment Processing"],
+                        "es": ["Gestión de Membresías", "Programación de Clases", "Procesamiento de Pagos"],
+                        "fr": ["Gestion des Adhésions", "Planification des Cours", "Traitement des Paiements"],
+                        "de": ["Mitgliederverwaltung", "Kursplanung", "Zahlungsabwicklung"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "James Anderson",
+                    "comment": {
+                        "en": "Great for managing gym memberships.",
+                        "es": "Excelente para gestionar las membresías del gimnasio.",
+                        "fr": "Parfait pour gérer les adhésions au gymnase.",
+                        "de": "Ideal zur Verwaltung von Fitnessmitgliedschaften."
+                    },
+                    "rating": 4.5
+                },
+                {
+                    "user": "Olivia Thompson",
+                    "comment": {
+                        "en": "Very useful but can be improved.",
+                        "es": "Muy útil pero puede mejorarse.",
+                        "fr": "Très utile mais peut être amélioré.",
+                        "de": "Sehr nützlich, kann aber verbessert werden."
+                    },
+                    "rating": 4
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "POS System 6",
+                "es": "Sistema POS 6",
+                "fr": "Système POS 6",
+                "de": "POS-System 6"
+            },
+            "category": {
+                "en": "Retail",
+                "es": "Minorista",
+                "fr": "Détail",
+                "de": "Einzelhandel"
+            },
+            "gateways": ["Gateway K", "Gateway L"],
+            "industries": {
+                "en": ["Retail", "Electronics"],
+                "es": ["Minorista", "Electrónica"],
+                "fr": ["Détail", "Électronique"],
+                "de": ["Einzelhandel", "Elektronik"]
+            },
+            "description": {
+                "en": "A versatile POS system tailored for electronics retail.",
+                "es": "Un sistema POS versátil adaptado para el comercio minorista de electrónica.",
+                "fr": "Un système POS polyvalent adapté à la vente au détail d'électronique.",
+                "de": "Ein vielseitiges POS-System für den Elektronik-Einzelhandel."
+            },
+            "price": {
+                "en": "$109/month",
+                "es": "$109/mes",
+                "fr": "109$/mois",
+                "de": "109$/Monat"
+            },
+            "rating": 4.6,
+            "software": [
+                {
+                    "name": {
+                        "en": "ElectroPOS",
+                        "es": "ElectroPOS",
+                        "fr": "ElectroPOS",
+                        "de": "ElectroPOS"
+                    },
+                    "supportedGateways": ["Gateway K", "Gateway L"],
+                    "supportedIndustries": {
+                        "en": ["Retail", "Electronics"],
+                        "es": ["Minorista", "Electrónica"],
+                        "fr": ["Détail", "Électronique"],
+                        "de": ["Einzelhandel", "Elektronik"]
+                    },
+                    "features": {
+                        "en": ["Warranty Management", "Inventory Tracking", "Customer Loyalty Programs"],
+                        "es": ["Gestión de Garantías", "Seguimiento de Inventario", "Programas de Fidelización de Clientes"],
+                        "fr": ["Gestion des Garanties", "Suivi des Stocks", "Programmes de Fidélisation des Clients"],
+                        "de": ["Garantiemanagement", "Bestandsverfolgung", "Kundentreueprogramme"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Brian Wilson",
+                    "comment": {
+                        "en": "Perfect for electronics retail.",
+                        "es": "Perfecto para el comercio minorista de electrónica.",
+                        "fr": "Parfait pour la vente au détail d'électronique.",
+                        "de": "Perfekt für den Elektronik-Einzelhandel."
+                    },
+                    "rating": 4.7
+                },
+                {
+                    "user": "Sophia Moore",
+                    "comment": {
+                        "en": "Very efficient and reliable.",
+                        "es": "Muy eficiente y confiable.",
+                        "fr": "Très efficace et fiable.",
+                        "de": "Sehr effizient und zuverlässig."
+                    },
+                    "rating": 4.5
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "POS System 7",
+                "es": "Sistema POS 7",
+                "fr": "Système POS 7",
+                "de": "POS-System 7"
+            },
+            "category": {
+                "en": "E-commerce",
+                "es": "Comercio Electrónico",
+                "fr": "Commerce Électronique",
+                "de": "E-Commerce"
+            },
+            "gateways": ["Gateway M", "Gateway N"],
+            "industries": {
+                "en": ["Online Stores"],
+                "es": ["Tiendas en Línea"],
+                "fr": ["Boutiques en Ligne"],
+                "de": ["Online-Shops"]
+            },
+            "description": {
+                "en": "A powerful POS system for e-commerce platforms.",
+                "es": "Un sistema POS potente para plataformas de comercio electrónico.",
+                "fr": "Un système POS puissant pour les plateformes de commerce électronique.",
+                "de": "Ein leistungsstarkes POS-System für E-Commerce-Plattformen."
+            },
+            "price": {
+                "en": "$99/month",
+                "es": "$99/mes",
+                "fr": "99$/mois",
+                "de": "99$/Monat"
+            },
+            "rating": 4.4,
+            "software": [
+                {
+                    "name": {
+                        "en": "EcomPOS",
+                        "es": "EcomPOS",
+                        "fr": "EcomPOS",
+                        "de": "EcomPOS"
+                    },
+                    "supportedGateways": ["Gateway M", "Gateway N"],
+                    "supportedIndustries": {
+                        "en": ["Online Stores"],
+                        "es": ["Tiendas en Línea"],
+                        "fr": ["Boutiques en Ligne"],
+                        "de": ["Online-Shops"]
+                    },
+                    "features": {
+                        "en": ["Order Fulfillment", "Product Listings", "Customer Support Integration"],
+                        "es": ["Cumplimiento de Pedidos", "Listados de Productos", "Integración de Soporte al Cliente"],
+                        "fr": ["Exécution des Commandes", "Listes de Produits", "Intégration du Support Client"],
+                        "de": ["Auftragserfüllung", "Produktlisten", "Kundenservice-Integration"]
+                    }
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Christopher Taylor",
+                    "comment": {
+                        "en": "Excellent for online stores.",
+                        "es": "Excelente para tiendas en línea.",
+                        "fr": "Excellent pour les boutiques en ligne.",
+                        "de": "Ausgezeichnet für Online-Shops."
+                    },
+                    "rating": 4.5
+                },
+                {
+                    "user": "Emma Harris",
+                    "comment": {
+                        "en": "Great features and support.",
+                        "es": "Excelentes características y soporte.",
+                        "fr": "Excellentes fonctionnalités et support.",
+                        "de": "Tolle Funktionen und Unterstützung."
+                    },
+                    "rating": 4.3
+                }
+            ]
+        }
+    ],
+    "gatewayDetails": [
+        {
+            "name": "Industrial Network Gateways",
+            "description": {
+                "en": "Industrial network gateways serve as intermediaries that enable communication between different industrial networks and protocols.",
+                "es": "Los gateways de redes industriales actúan como intermediarios que permiten la comunicación entre diferentes redes y protocolos industriales.",
+                "fr": "Les passerelles de réseau industriel servent d'intermédiaires permettant la communication entre différents réseaux et protocoles industriels.",
+                "de": "Industrielle Netzwerkgateways dienen als Vermittler, die die Kommunikation zwischen verschiedenen industriellen Netzwerken und Protokollen ermöglichen."
+            },
+            "keyFunctions": {
+                "en": ["Protocol Conversion", "Edge Computing", "Data Filtering", "Remote Management"],
+                "es": ["Conversión de Protocolos", "Computación en el Borde", "Filtrado de Datos", "Gestión Remota"],
+                "fr": ["Conversion de Protocole", "Edge Computing", "Filtrage de Données", "Gestion à Distance"],
+                "de": ["Protokollkonvertierung", "Edge Computing", "Datenfilterung", "Fernverwaltung"]
+            },
+            "applications": {
+                "en": ["Manufacturing", "Process Automation", "Energy Management"],
+                "es": ["Fabricación", "Automatización de Procesos", "Gestión de la Energía"],
+                "fr": ["Fabrication", "Automatisation des Processus", "Gestion de l'Énergie"],
+                "de": ["Fertigung", "Prozessautomatisierung", "Energiemanagement"]
+            },
+            "examples": ["HMS Industrial Networks", "GE’s Predix Machine"]
+        },
+        {
+            "name": "IoT Gateways",
+            "description": {
+                "en": "IoT gateways connect Internet of Things (IoT) devices to the internet or other networks. They support multiple communication protocols, manage data integration, and often include security features to protect data and devices.",
+                "es": "Los gateways IoT conectan dispositivos de Internet de las Cosas (IoT) a internet u otras redes. Soportan múltiples protocolos de comunicación, gestionan la integración de datos y a menudo incluyen características de seguridad para proteger datos y dispositivos.",
+                "fr": "Les passerelles IoT connectent les dispositifs de l'Internet des Objets (IoT) à Internet ou à d'autres réseaux. Elles supportent de multiples protocoles de communication, gèrent l'intégration des données et incluent souvent des fonctionnalités de sécurité pour protéger les données et les dispositifs.",
+                "de": "IoT-Gateways verbinden Internet-of-Things (IoT)-Geräte mit dem Internet oder anderen Netzwerken. Sie unterstützen mehrere Kommunikationsprotokolle, verwalten die Datenintegration und umfassen oft Sicherheitsfunktionen zum Schutz von Daten und Geräten."
+            },
+            "keyFunctions": {
+                "en": ["Protocol Support", "Data Integration", "Security", "Edge Analytics"],
+                "es": ["Soporte de Protocolos", "Integración de Datos", "Seguridad", "Análisis en el Borde"],
+                "fr": ["Support des Protocoles", "Intégration des Données", "Sécurité", "Analyse en Périphérie"],
+                "de": ["Protokollunterstützung", "Datenintegration", "Sicherheit", "Edge-Analyse"]
+            },
+            "applications": {
+                "en": ["Smart Cities", "Healthcare", "Agriculture"],
+                "es": ["Ciudades Inteligentes", "Salud", "Agricultura"],
+                "fr": ["Villes Intelligentes", "Santé", "Agriculture"],
+                "de": ["Smart Cities", "Gesundheitswesen", "Landwirtschaft"]
+            },
+            "examples": ["Siemens SIMATIC IOT", "Teltonika Gateway"]
+        },
+        {
+            "name": "Security Gateways",
+            "description": {
+                "en": "Security gateways provide essential security functions for IoT devices and networks, acting as intermediaries to monitor and filter network traffic, protect against unauthorized access, and ensure data integrity.",
+                "es": "Los gateways de seguridad proporcionan funciones de seguridad esenciales para dispositivos y redes IoT, actuando como intermediarios para monitorear y filtrar el tráfico de red, proteger contra accesos no autorizados y garantizar la integridad de los datos.",
+                "fr": "Les passerelles de sécurité fournissent des fonctions de sécurité essentielles pour les dispositifs et réseaux IoT, agissant comme des intermédiaires pour surveiller et filtrer le trafic réseau, protéger contre les accès non autorisés et garantir l'intégrité des données.",
+                "de": "Sicherheitsgateways bieten wesentliche Sicherheitsfunktionen für IoT-Geräte und Netzwerke, indem sie als Vermittler den Netzwerkverkehr überwachen und filtern, vor unbefugtem Zugriff schützen und die Datenintegrität gewährleisten."
+            },
+            "keyFunctions": {
+                "en": ["Authentication", "Encryption", "Access Control", "Firewalling", "Intrusion Detection and Prevention"],
+                "es": ["Autenticación", "Encriptación", "Control de Acceso", "Cortafuegos", "Detección y Prevención de Intrusiones"],
+                "fr": ["Authentification", "Cryptage", "Contrôle d'Accès", "Pare-feu", "Détection et Prévention des Intrusions"],
+                "de": ["Authentifizierung", "Verschlüsselung", "Zugangskontrolle", "Firewalling", "Eindringungserkennung und -prävention"]
+            },
+            "applications": {
+                "en": ["Critical Infrastructure", "Healthcare", "Financial Services"],
+                "es": ["Infraestructura Crítica", "Salud", "Servicios Financieros"],
+                "fr": ["Infrastructure Critique", "Santé", "Services Financiers"],
+                "de": ["Kritische Infrastruktur", "Gesundheitswesen", "Finanzdienstleistungen"]
+            },
+            "examples": ["Fortinet Security Fabric", "Cisco Umbrella"]
+        },
+        {
+            "name": "Application Gateways",
+            "description": {
+                "en": "Application gateways bridge IoT devices with cloud-based applications, translating data into formats that cloud services can process. They help manage data flow between IoT devices and the cloud, ensuring efficient and secure communication.",
+                "es": "Los gateways de aplicaciones conectan dispositivos IoT con aplicaciones basadas en la nube, traduciendo datos a formatos que los servicios en la nube pueden procesar. Ayudan a gestionar el flujo de datos entre dispositivos IoT y la nube, asegurando una comunicación eficiente y segura.",
+                "fr": "Les passerelles d'applications relient les dispositifs IoT aux applications basées sur le cloud, traduisant les données en formats que les services cloud peuvent traiter. Elles aident à gérer le flux de données entre les dispositifs IoT et le cloud, garantissant une communication efficace et sécurisée.",
+                "de": "Anwendungsgateways verbinden IoT-Geräte mit cloudbasierten Anwendungen und übersetzen Daten in Formate, die Cloud-Dienste verarbeiten können. Sie helfen, den Datenfluss zwischen IoT-Geräten und der Cloud zu verwalten und sorgen für eine effiziente und sichere Kommunikation."
+            },
+            "keyFunctions": {
+                "en": ["Data Translation", "Data Aggregation", "Security"],
+                "es": ["Traducción de Datos", "Agregación de Datos", "Seguridad"],
+                "fr": ["Traduction des Données", "Agrégation des Données", "Sécurité"],
+                "de": ["Datenübersetzung", "Datenaggregation", "Sicherheit"]
+            },
+            "applications": {
+                "en": ["Smart Homes", "Industrial Automation", "Healthcare"],
+                "es": ["Hogares Inteligentes", "Automatización Industrial", "Salud"],
+                "fr": ["Maisons Intelligentes", "Automatisation Industrielle", "Santé"],
+                "de": ["Smart Homes", "Industrielle Automatisierung", "Gesundheitswesen"]
+            },
+            "examples": ["Amazon AWS IoT Core", "Microsoft Azure IoT Hub"]
+        },
+        {
+            "name": "Mobile Gateways",
+            "description": {
+                "en": "Mobile gateways connect IoT devices to the internet using cellular or wireless communication protocols. They enable reliable data transmission from remote or mobile devices to central systems or the cloud.",
+                "es": "Los gateways móviles conectan dispositivos IoT a internet utilizando protocolos de comunicación celular o inalámbrica. Permiten una transmisión de datos confiable desde dispositivos remotos o móviles a sistemas centrales o la nube.",
+                "fr": "Les passerelles mobiles connectent les dispositifs IoT à Internet en utilisant des protocoles de communication cellulaire ou sans fil. Elles permettent une transmission fiable des données des dispositifs distants ou mobiles vers les systèmes centraux ou le cloud.",
+                "de": "Mobile Gateways verbinden IoT-Geräte über zellulare oder drahtlose Kommunikationsprotokolle mit dem Internet. Sie ermöglichen eine zuverlässige Datenübertragung von entfernten oder mobilen Geräten zu zentralen Systemen oder der Cloud."
+            },
+            "keyFunctions": {
+                "en": ["Cellular Connectivity", "Edge Processing", "Secure Transmission"],
+                "es": ["Conectividad Celular", "Procesamiento en el Borde", "Transmisión Segura"],
+                "fr": ["Connectivité Cellulaire", "Traitement en Périphérie", "Transmission Sécurisée"],
+                "de": ["Zellulare Konnektivität", "Edge-Verarbeitung", "Sichere Übertragung"]
+            },
+            "applications": {
+                "en": ["Fleet Management", "Smart Agriculture", "Smart Cities"],
+                "es": ["Gestión de Flotas", "Agricultura Inteligente", "Ciudades Inteligentes"],
+                "fr": ["Gestion de Flotte", "Agriculture Intelligente", "Villes Intelligentes"],
+                "de": ["Flottenmanagement", "Intelligente Landwirtschaft", "Smart Cities"]
+            },
+            "examples": ["Cisco IR1101", "Sierra Wireless AirLink"]
+        },
+        {
+            "name": "Wearable Gateways",
+            "description": {
+                "en": "Wearable gateways connect wearable devices, like fitness trackers or smartwatches, to other devices or networks. They facilitate data collection, processing, and communication from wearable technology.",
+                "es": "Los gateways para wearables conectan dispositivos portátiles, como rastreadores de fitness o relojes inteligentes, a otros dispositivos o redes. Facilitan la recopilación, el procesamiento y la comunicación de datos de la tecnología portátil.",
+                "fr": "Les passerelles portables connectent les dispositifs portables, comme les trackers de fitness ou les montres intelligentes, à d'autres dispositifs ou réseaux. Elles facilitent la collecte, le traitement et la communication des données de la technologie portable.",
+                "de": "Wearable Gateways verbinden tragbare Geräte wie Fitness-Tracker oder Smartwatches mit anderen Geräten oder Netzwerken. Sie erleichtern die Datenerfassung, -verarbeitung und -kommunikation aus der tragbaren Technologie."
+            },
+            "keyFunctions": {
+                "en": ["Wireless Communication", "Data Processing", "Integration"],
+                "es": ["Comunicación Inalámbrica", "Procesamiento de Datos", "Integración"],
+                "fr": ["Communication Sans Fil", "Traitement des Données", "Intégration"],
+                "de": ["Drahtlose Kommunikation", "Datenverarbeitung", "Integration"]
+            },
+            "applications": {
+                "en": ["Healthcare", "Sports and Fitness", "Consumer Electronics"],
+                "es": ["Salud", "Deportes y Fitness", "Electrónica de Consumo"],
+                "fr": ["Santé", "Sports et Fitness", "Électronique Grand Public"],
+                "de": ["Gesundheitswesen", "Sport und Fitness", "Verbraucherelektronik"]
+            },
+            "examples": ["Fitbit Ionic", "Apple Watch"]
+        },
+        {
+            "name": "Home Gateways",
+            "description": {
+                "en": "Home gateways connect local area networks (LAN) to the internet, integrating the functions of modems, routers, and wireless access points. They enable devices within a home network to access the internet and communicate with each other.",
+                "es": "Los gateways domésticos conectan redes de área local (LAN) a internet, integrando las funciones de módems, enrutadores y puntos de acceso inalámbrico. Permiten que los dispositivos dentro de una red doméstica accedan a internet y se comuniquen entre sí.",
+                "fr": "Les passerelles domestiques connectent les réseaux locaux (LAN) à Internet, intégrant les fonctions de modems, de routeurs et de points d'accès sans fil. Elles permettent aux dispositifs au sein d'un réseau domestique d'accéder à Internet et de communiquer entre eux.",
+                "de": "Home Gateways verbinden lokale Netzwerke (LAN) mit dem Internet und integrieren die Funktionen von Modems, Routern und drahtlosen Zugangspunkten. Sie ermöglichen es Geräten innerhalb eines Heimnetzwerks, auf das Internet zuzugreifen und miteinander zu kommunizieren."
+            },
+            "keyFunctions": {
+                "en": ["Internet Connectivity", "Traffic Management", "Security Features"],
+                "es": ["Conectividad a Internet", "Gestión del Tráfico", "Características de Seguridad"],
+                "fr": ["Connectivité Internet", "Gestion du Trafic", "Fonctionnalités de Sécurité"],
+                "de": ["Internetkonnektivität", "Verkehrsmanagement", "Sicherheitsfunktionen"]
+            },
+            "applications": {
+                "en": ["Home Automation", "Internet Access", "Network Security"],
+                "es": ["Automatización del Hogar", "Acceso a Internet", "Seguridad de la Red"],
+                "fr": ["Domotique", "Accès à Internet", "Sécurité Réseau"],
+                "de": ["Hausautomation", "Internetzugang", "Netzwerksicherheit"]
+            },
+            "examples": ["Google Nest WiFi", "TP-Link Deco"]
+        },
+        {
+            "name": "Medical Gateways",
+            "description": {
+                "en": "Medical gateways, also known as health information gateways, enable the secure exchange of electronic health information between healthcare providers, systems, and organizations.",
+                "es": "Los gateways médicos, también conocidos como gateways de información de salud, permiten el intercambio seguro de información de salud electrónica entre proveedores de atención médica, sistemas y organizaciones.",
+                "fr": "Les passerelles médicales, également connues sous le nom de passerelles d'information sur la santé, permettent l'échange sécurisé d'informations de santé électroniques entre les prestataires de soins de santé, les systèmes et les organisations.",
+                "de": "Medizinische Gateways, auch bekannt als Gesundheitsinformations-Gateways, ermöglichen den sicheren Austausch von elektronischen Gesundheitsinformationen zwischen Gesundheitsdienstleistern, Systemen und Organisationen."
+            },
+            "keyFunctions": {
+                "en": ["Data Integration", "Security Compliance", "Patient Access"],
+                "es": ["Integración de Datos", "Cumplimiento de Seguridad", "Acceso del Paciente"],
+                "fr": ["Intégration des Données", "Conformité de Sécurité", "Accès des Patients"],
+                "de": ["Datenintegration", "Sicherheitskonformität", "Patientenzugang"]
+            },
+            "applications": {
+                "en": ["Telemedicine", "Health Information Exchange", "Medical Device Integration"],
+                "es": ["Telemedicina", "Intercambio de Información de Salud", "Integración de Dispositivos Médicos"],
+                "fr": ["Télémédecine", "Échange d'Informations de Santé", "Intégration des Dispositifs Médicaux"],
+                "de": ["Telemedizin", "Gesundheitsinformationsaustausch", "Integration von Medizinprodukten"]
+            },
+            "examples": ["GE Health Cloud", "Philips HealthSuite"]
+        }
+    ],
+    "posTypes": [
+        {
+            "name": {
+                "en": "Traditional POS Systems",
+                "es": "Sistemas POS Tradicionales",
+                "fr": "Systèmes POS Traditionnels",
+                "de": "Traditionelle POS-Systeme"
+            },
+            "description": {
+                "en": "Traditional POS systems are the classic, hardware-intensive setups commonly seen in retail stores, grocery stores, and various other small businesses. These systems include components like a cash register, barcode scanner, receipt printer, and credit card reader, all connected via cables.",
+                "es": "Los sistemas POS tradicionales son las configuraciones clásicas e intensivas en hardware que se ven comúnmente en tiendas minoristas, tiendas de comestibles y varios otros pequeños negocios. Estos sistemas incluyen componentes como una caja registradora, un escáner de códigos de barras, una impresora de recibos y un lector de tarjetas de crédito, todos conectados mediante cables.",
+                "fr": "Les systèmes POS traditionnels sont les configurations classiques, intensives en matériel, couramment vues dans les magasins de détail, les épiceries et diverses autres petites entreprises. Ces systèmes incluent des composants tels qu'une caisse enregistreuse, un scanner de codes-barres, une imprimante de reçus et un lecteur de cartes de crédit, tous connectés par des câbles.",
+                "de": "Traditionelle POS-Systeme sind die klassischen, hardwareintensiven Konfigurationen, die häufig in Einzelhandelsgeschäften, Lebensmittelgeschäften und verschiedenen anderen kleinen Unternehmen zu finden sind. Diese Systeme umfassen Komponenten wie eine Registrierkasse, einen Barcodescanner, einen Belegdrucker und ein Kreditkartenlesegerät, die alle über Kabel verbunden sind."
+            },
+            "keyFunctions": {
+                "en": ["Payment Processing", "Inventory Management", "Customer Management", "Sales Reporting"],
+                "es": ["Procesamiento de Pagos", "Gestión de Inventarios", "Gestión de Clientes", "Informes de Ventas"],
+                "fr": ["Traitement des Paiements", "Gestion des Stocks", "Gestion des Clients", "Rapports de Ventes"],
+                "de": ["Zahlungsabwicklung", "Bestandsverwaltung", "Kundenmanagement", "Verkaufsberichterstattung"]
+            },
+            "applications": {
+                "en": ["Retail", "Grocery Stores", "Small Businesses"],
+                "es": ["Minorista", "Tiendas de Comestibles", "Pequeñas Empresas"],
+                "fr": ["Détail", "Épiceries", "Petites Entreprises"],
+                "de": ["Einzelhandel", "Lebensmittelgeschäfte", "Kleinunternehmen"]
+            }
+        },
+        {
+            "name": {
+                "en": "Mobile POS Systems",
+                "es": "Sistemas POS Móviles",
+                "fr": "Systèmes POS Mobiles",
+                "de": "Mobile POS-Systeme"
+            },
+            "description": {
+                "en": "Mobile POS systems use smartphones or tablets as the primary hardware, making them highly portable and flexible. These systems are popular for businesses that need mobility, such as food trucks, pop-up shops, and delivery services.",
+                "es": "Los sistemas POS móviles utilizan teléfonos inteligentes o tabletas como el hardware principal, lo que los hace altamente portátiles y flexibles. Estos sistemas son populares para negocios que necesitan movilidad, como camiones de comida, tiendas temporales y servicios de entrega.",
+                "fr": "Les systèmes POS mobiles utilisent des smartphones ou des tablettes comme matériel principal, les rendant très portables et flexibles. Ces systèmes sont populaires pour les entreprises nécessitant de la mobilité, comme les camions de nourriture, les boutiques éphémères et les services de livraison.",
+                "de": "Mobile POS-Systeme verwenden Smartphones oder Tablets als Haupt-Hardware und sind somit sehr portabel und flexibel. Diese Systeme sind bei Unternehmen beliebt, die Mobilität benötigen, wie z. B. Food Trucks, Pop-up-Shops und Lieferdienste."
+            },
+            "keyFunctions": {
+                "en": ["Portability", "Inventory Management", "Customer Interaction", "Integration"],
+                "es": ["Portabilidad", "Gestión de Inventarios", "Interacción con Clientes", "Integración"],
+                "fr": ["Portabilité", "Gestion des Stocks", "Interaction Client", "Intégration"],
+                "de": ["Portabilität", "Bestandsverwaltung", "Kundeninteraktion", "Integration"]
+            },
+            "applications": {
+                "en": ["Food Trucks", "Pop-Up Shops", "Service Providers"],
+                "es": ["Camiones de Comida", "Tiendas Temporales", "Proveedores de Servicios"],
+                "fr": ["Camions de Nourriture", "Boutiques Éphémères", "Fournisseurs de Services"],
+                "de": ["Food Trucks", "Pop-up-Shops", "Dienstleister"]
+            }
+        },
+        {
+            "name": {
+                "en": "Cloud-Based POS Systems",
+                "es": "Sistemas POS Basados en la Nube",
+                "fr": "Systèmes POS Basés sur le Cloud",
+                "de": "Cloud-basierte POS-Systeme"
+            },
+            "description": {
+                "en": "Cloud-based POS systems store all data in the cloud, allowing access from any device with an internet connection. These systems are particularly useful for businesses with multiple locations or those needing remote access to sales data.",
+                "es": "Los sistemas POS basados en la nube almacenan todos los datos en la nube, lo que permite el acceso desde cualquier dispositivo con conexión a internet. Estos sistemas son particularmente útiles para negocios con múltiples ubicaciones o aquellos que necesitan acceso remoto a los datos de ventas.",
+                "fr": "Les systèmes POS basés sur le cloud stockent toutes les données dans le cloud, permettant l'accès depuis n'importe quel appareil avec une connexion internet. Ces systèmes sont particulièrement utiles pour les entreprises ayant plusieurs emplacements ou celles nécessitant un accès distant aux données de vente.",
+                "de": "Cloud-basierte POS-Systeme speichern alle Daten in der Cloud und ermöglichen den Zugriff von jedem Gerät mit Internetverbindung. Diese Systeme sind besonders nützlich für Unternehmen mit mehreren Standorten oder für diejenigen, die remote auf Verkaufsdaten zugreifen müssen."
+            },
+            "keyFunctions": {
+                "en": ["Real-Time Data Syncing", "Accessibility", "Inventory Management", "Reporting and Analytics"],
+                "es": ["Sincronización de Datos en Tiempo Real", "Accesibilidad", "Gestión de Inventarios", "Informes y Análisis"],
+                "fr": ["Synchronisation des Données en Temps Réel", "Accessibilité", "Gestion des Stocks", "Rapports et Analyses"],
+                "de": ["Echtzeit-Datensynchronisation", "Zugänglichkeit", "Bestandsverwaltung", "Berichterstattung und Analyse"]
+            },
+            "applications": {
+                "en": ["Retail Chains", "E-commerce", "Service Industry"],
+                "es": ["Cadenas de Minoristas", "Comercio Electrónico", "Industria de Servicios"],
+                "fr": ["Chaînes de Détail", "Commerce Électronique", "Industrie des Services"],
+                "de": ["Einzelhandelsketten", "E-Commerce", "Dienstleistungsbranche"]
+            }
+        },
+        {
+            "name": {
+                "en": "Self-Service Kiosks",
+                "es": "Kioscos de Autoservicio",
+                "fr": "Kiosques en Libre-Service",
+                "de": "Selbstbedienungskioske"
+            },
+            "description": {
+                "en": "Self-service kiosks allow customers to complete transactions independently using touchscreen interfaces. These kiosks are common in fast food restaurants, grocery stores, and movie theaters.",
+                "es": "Los kioscos de autoservicio permiten a los clientes completar transacciones de forma independiente utilizando interfaces táctiles. Estos kioscos son comunes en restaurantes de comida rápida, tiendas de comestibles y cines.",
+                "fr": "Les kiosques en libre-service permettent aux clients de réaliser des transactions de manière autonome en utilisant des interfaces tactiles. Ces kiosques sont courants dans les restaurants de restauration rapide, les épiceries et les cinémas.",
+                "de": "Selbstbedienungskioske ermöglichen es Kunden, Transaktionen eigenständig über Touchscreen-Oberflächen abzuschließen. Diese Kioske sind häufig in Fast-Food-Restaurants, Lebensmittelgeschäften und Kinos zu finden."
+            },
+            "keyFunctions": {
+                "en": ["User-Friendly Interface", "Payment Processing", "Inventory Integration", "Order Management"],
+                "es": ["Interfaz Amigable", "Procesamiento de Pagos", "Integración de Inventarios", "Gestión de Pedidos"],
+                "fr": ["Interface Conviviale", "Traitement des Paiements", "Intégration des Stocks", "Gestion des Commandes"],
+                "de": ["Benutzerfreundliche Oberfläche", "Zahlungsabwicklung", "Bestandsintegration", "Bestellmanagement"]
+            },
+            "applications": {
+                "en": ["Fast Food Restaurants", "Grocery Stores", "Entertainment Venues"],
+                "es": ["Restaurantes de Comida Rápida", "Tiendas de Comestibles", "Lugares de Entretenimiento"],
+                "fr": ["Restaurants de Restauration Rapide", "Épiceries", "Lieux de Divertissement"],
+                "de": ["Fast-Food-Restaurants", "Lebensmittelgeschäfte", "Unterhaltungsorte"]
+            }
+        },
+        {
+            "name": {
+                "en": "Online POS Systems",
+                "es": "Sistemas POS en Línea",
+                "fr": "Systèmes POS en Ligne",
+                "de": "Online-POS-Systeme"
+            },
+            "description": {
+                "en": "Online POS systems are designed for e-commerce businesses, allowing transactions to be processed over the internet. These systems integrate with e-commerce platforms to manage online sales efficiently.",
+                "es": "Los sistemas POS en línea están diseñados para negocios de comercio electrónico, permitiendo que las transacciones se procesen a través de internet. Estos sistemas se integran con plataformas de comercio electrónico para gestionar las ventas en línea de manera eficiente.",
+                "fr": "Les systèmes POS en ligne sont conçus pour les entreprises de commerce électronique, permettant de traiter les transactions sur Internet. Ces systèmes s'intègrent aux plateformes de commerce électronique pour gérer efficacement les ventes en ligne.",
+                "de": "Online-POS-Systeme sind für E-Commerce-Unternehmen konzipiert und ermöglichen die Abwicklung von Transaktionen über das Internet. Diese Systeme integrieren sich in E-Commerce-Plattformen, um Online-Verkäufe effizient zu verwalten."
+            },
+            "keyFunctions": {
+                "en": ["Payment Gateway Integration", "Order Management", "Customer Data Management", "Inventory Synchronization"],
+                "es": ["Integración con Pasarelas de Pago", "Gestión de Pedidos", "Gestión de Datos de Clientes", "Sincronización de Inventarios"],
+                "fr": ["Intégration de Passerelle de Paiement", "Gestion des Commandes", "Gestion des Données Client", "Synchronisation des Stocks"],
+                "de": ["Integration von Zahlungsgateways", "Bestellmanagement", "Kundendatenverwaltung", "Bestandssynchronisation"]
+            },
+            "applications": {
+                "en": ["E-commerce Stores", "Online Food Delivery", "Subscription Services"],
+                "es": ["Tiendas de Comercio Electrónico", "Entrega de Comida en Línea", "Servicios de Suscripción"],
+                "fr": ["Boutiques de Commerce Électronique", "Livraison de Nourriture en Ligne", "Services d'Abonnement"],
+                "de": ["E-Commerce-Shops", "Online-Essenslieferung", "Abonnementdienste"]
+            }
+        },
+        {
+            "name": {
+                "en": "Multichannel POS Systems",
+                "es": "Sistemas POS Multicanal",
+                "fr": "Systèmes POS Multicanal",
+                "de": "Multichannel-POS-Systeme"
+            },
+            "description": {
+                "en": "Multichannel POS systems integrate sales data from various channels, including physical stores, online shops, and social media platforms. This ensures a unified view of sales and inventory across all platforms.",
+                "es": "Los sistemas POS multicanal integran datos de ventas de varios canales, incluidas tiendas físicas, tiendas en línea y plataformas de redes sociales. Esto garantiza una vista unificada de las ventas y el inventario en todas las plataformas.",
+                "fr": "Les systèmes POS multicanal intègrent les données de vente de divers canaux, y compris les magasins physiques, les boutiques en ligne et les plateformes de médias sociaux. Cela garantit une vue unifiée des ventes et des stocks sur toutes les plateformes.",
+                "de": "Multichannel-POS-Systeme integrieren Verkaufsdaten aus verschiedenen Kanälen, einschließlich physischer Geschäfte, Online-Shops und Social-Media-Plattformen. Dies gewährleistet eine einheitliche Sicht auf Verkäufe und Bestände über alle Plattformen hinweg."
+            },
+            "keyFunctions": {
+                "en": ["Unified Inventory Management", "Sales Reporting", "Customer Management", "Order Fulfillment"],
+                "es": ["Gestión Unificada de Inventarios", "Informes de Ventas", "Gestión de Clientes", "Cumplimiento de Pedidos"],
+                "fr": ["Gestion Unifiée des Stocks", "Rapports de Ventes", "Gestion des Clients", "Exécution des Commandes"],
+                "de": ["Einheitliche Bestandsverwaltung", "Verkaufsberichterstattung", "Kundenmanagement", "Auftragsabwicklung"]
+            },
+            "applications": {
+                "en": ["Retail Stores with Online Presence", "E-commerce Companies", "Pop-Up Events"],
+                "es": ["Tiendas Minoristas con Presencia en Línea", "Empresas de Comercio Electrónico", "Eventos Pop-Up"],
+                "fr": ["Magasins de Détail avec Présence en Ligne", "Entreprises de Commerce Électronique", "Événements Pop-Up"],
+                "de": ["Einzelhandelsgeschäfte mit Online-Präsenz", "E-Commerce-Unternehmen", "Pop-Up-Veranstaltungen"]
+            }
+        },
+        {
+            "name": {
+                "en": "Open-Source POS Systems",
+                "es": "Sistemas POS de Código Abierto",
+                "fr": "Systèmes POS Open Source",
+                "de": "Open-Source-POS-Systeme"
+            },
+            "description": {
+                "en": "Open-source POS systems allow businesses to customize their POS software to meet specific needs. These systems require technical expertise for setup and maintenance but offer unparalleled flexibility.",
+                "es": "Los sistemas POS de código abierto permiten a las empresas personalizar su software POS para satisfacer necesidades específicas. Estos sistemas requieren experiencia técnica para la configuración y el mantenimiento, pero ofrecen una flexibilidad sin igual.",
+                "fr": "Les systèmes POS open source permettent aux entreprises de personnaliser leur logiciel POS pour répondre à des besoins spécifiques. Ces systèmes nécessitent une expertise technique pour l'installation et la maintenance, mais offrent une flexibilité inégalée.",
+                "de": "Open-Source-POS-Systeme ermöglichen es Unternehmen, ihre POS-Software an spezifische Bedürfnisse anzupassen. Diese Systeme erfordern technisches Fachwissen für die Einrichtung und Wartung, bieten jedoch beispiellose Flexibilität."
+            },
+            "keyFunctions": {
+                "en": ["Customization", "Integration", "Security", "Scalability"],
+                "es": ["Personalización", "Integración", "Seguridad", "Escalabilidad"],
+                "fr": ["Personnalisation", "Intégration", "Sécurité", "Évolutivité"],
+                "de": ["Anpassung", "Integration", "Sicherheit", "Skalierbarkeit"]
+            },
+            "applications": {
+                "en": ["Large Enterprises", "Tech-Savvy Businesses", "Niche Markets"],
+                "es": ["Grandes Empresas", "Negocios con Conocimientos Técnicos", "Mercados de Nicho"],
+                "fr": ["Grandes Entreprises", "Entreprises Technophiles", "Marchés de Niche"],
+                "de": ["Großunternehmen", "Technikaffine Unternehmen", "Nischenmärkte"]
+            }
+        }
+    ]
+}

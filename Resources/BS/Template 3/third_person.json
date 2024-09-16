@@ -1,0 +1,16 @@
+{
+    "questions": [
+        {
+            "keywords": ["who is carter", "tell me about carter", "carter's role"],
+            "response": "Carter Watts is the Co-Founder and COO of GAZEBO Inc., overseeing the day-to-day operations and ensuring the company runs smoothly."
+        },
+        {
+            "keywords": ["who is randi", "tell me about randi", "randi's role"],
+            "response": "Randi Cinelli is associated with the family restaurant where Jack Liselli is preparing to shadow a server to gain experience."
+        },
+        {
+            "keywords": ["tell me about your creator", "who made you", "who designed you"],
+            "response": "I was designed by the talented team at GAZEBO Inc., led by Jack Liselli, to assist with various inquiries and provide support."
+        }
+    ]
+}

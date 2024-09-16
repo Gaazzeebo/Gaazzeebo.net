@@ -1,0 +1,16 @@
+{
+    "questions": [
+        {
+            "keywords": ["what is GAZEBO Inc", "company overview", "company background"],
+            "response": "GAZEBO Inc. is a software engineering company specializing in MEDTECH design, APP/Web-based development, and AI and robot development."
+        },
+        {
+            "keywords": ["company goals", "mission", "vision"],
+            "response": "GAZEBO Inc. aims to innovate in the fields of technology and software development, providing high-end solutions to complex problems."
+        },
+        {
+            "keywords": ["how many employees", "company size", "number of workers"],
+            "response": "GAZEBO Inc. started with 7 people and has now grown to 20 employees."
+        }
+    ]
+}

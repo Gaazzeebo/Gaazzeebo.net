@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gourmet Food Truck offering the finest street food with a touch of elegance. Discover our menu and find us near you!">
+    <meta name="keywords" content="food truck, gourmet food, street food, menu, locations, contact">
+    <meta name="author" content="Gourmet Food Truck">
+    <title>Gourmet Food Truck</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet"> <!-- Font for schedule details -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+            <a href="#" class="logo">Gourmet Truck</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Gourmet On Wheels</h1>
+            <p>Bringing you the finest street food with a touch of elegance.</p>
+            <a href="#menu" class="btn">Discover Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+<section id="menu" class="menu">
+    <div class="container">
+        <h2>Our Signature Dishes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/breakfast-burrito.jpg" alt="Breakfast Burrito" loading="lazy">
+                <div class="menu-info">
+                    <h3>Breakfast Burrito</h3>
+                    <p>A delicious burrito filled with eggs, bacon, and cheese.</p>
+                    <span class="price">$8.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/grilled-cheese.jpg" alt="Grilled Cheese Sandwich" loading="lazy">
+                <div class="menu-info">
+                    <h3>Grilled Cheese Sandwich</h3>
+                    <p>Golden grilled cheese with a side of tomato soup.</p>
+                    <span class="price">$7.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/tacos.jpg" alt="Tacos" loading="lazy">
+                <div class="menu-info">
+                    <h3>Street Tacos</h3>
+                    <p>Street style tacos with your choice of filling.</p>
+                    <span class="price">$3.50 each</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/smoothies.jpg" alt="Smoothies" loading="lazy">
+                <div class="menu-info">
+                    <h3>Fresh Smoothies</h3>
+                    <p>Fresh fruit smoothies available in various flavors.</p>
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="images/food-truck.jpg" alt="Our Food Truck" class="about-image" loading="lazy">
+            <div class="about-text">
+                <p>Welcome to <strong>[Your Food Truck Name]</strong>, where every bite tells a story! We started this food truck with a passion for bringing unique, flavorful dishes right to your doorstep. Our journey began on the streets of [Your City], driven by a desire to serve fresh, delicious food that brings people together.</p>
+                <p>Our menu is a reflection of our love for diverse cuisines, combined with a commitment to quality ingredients. Whether you're grabbing a quick lunch or enjoying a meal with friends, we aim to provide an experience that's not just about eating, but about savoring every moment.</p>
+                <p>Join us on this culinary adventure, where each dish is crafted with care and served with a smile. We're not just serving food; we're creating memories, one plate at a time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations">
+        <div class="container">
+            <h2>Where to Find Us</h2>
+            <div id="map"></div>
+            <div id="color-key" class="color-key">
+                <h3>Food Truck Schedule</h3>
+                <ul>
+                    <li>
+                        <span class="key-box" style="background-color: red;"></span>
+                        <strong>Monday - Central Park</strong>: 123 Main St, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 4, 2024 | Time: 9:00 AM - 2:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="key-box" style="background-color: blue;"></span>
+                        <strong>Tuesday - Riverwalk</strong>: 456 Riverside Dr, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 5, 2024 | Time: 10:00 AM - 3:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="key-box" style="background-color: green;"></span>
+                        <strong>Wednesday - University Plaza</strong>: 789 University Ave, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 6, 2024 | Time: 11:00 AM - 4:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="key-box" style="background-color: orange;"></span>
+                        <strong>Thursday - Downtown</strong>: 101 City Square, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 7, 2024 | Time: 12:00 PM - 5:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="key-box" style="background-color: yellow;"></span>
+                        <strong>Friday - Ybor City</strong>: 202 Historical St, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 8, 2024 | Time: 1:00 PM - 6:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="key-box" style="background-color: purple;"></span>
+                        <strong>Saturday - Hyde Park</strong>: 303 Fancy Ln, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 9, 2024 | Time: 2:00 PM - 7:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="key-box" style="background-color: pink;"></span>
+                        <strong>Sunday - Beachfront</strong>: 404 Ocean Ave, Tampa, FL <br>
+                        <span class="schedule-details">Date: September 10, 2024 | Time: 3:00 PM - 8:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@gourmettruck.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, State</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gourmet Food Truck. All Rights Reserved. Powered By Gaazzeebo LLC</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load Google Maps API and initialize the map -->
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhJGwnMqiTDnAXM3hXk0iB9zU7hJcoE8s&libraries=places,marker&callback=initMap" async defer></script>
+</body>
+</html>

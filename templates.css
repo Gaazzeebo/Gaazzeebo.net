@@ -1,0 +1,674 @@
+/* General reset and body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #ff851b;
+    color: white;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header */
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.small-logo {
+    height: 40px; /* Adjust size as necessary */
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin: 0; /* Reset default margin */
+}
+
+.rainbow-text {
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7fdbff;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    color: #ff851b;
+    outline: none;
+    text-decoration: underline;
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hide by default for mobile, show with JS */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #001f3f;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Template Section */
+.templates-section {
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #001f3f, #000a12);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.templates-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('image/about-hero3.jpg');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.templates-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #ff851b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.templates-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #ff851b;
+    border-radius: 2px;
+}
+
+/* Template Categories */
+.template-category {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.template-category.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.template-category h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #7fdbff;
+    transition: color 0.3s ease;
+}
+
+.template-category h3:hover {
+    color: #ff851b;
+}
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.template-card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 0.3s ease, transform 0.3s cubic-bezier(.25,.8,.25,1);
+    position: relative;
+    overflow: hidden;
+}
+
+.template-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff851b, #ffcc00);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.template-card:hover::before, .template-card:focus-within::before {
+    opacity: 0.1;
+}
+
+.template-card:hover, .template-card:focus-within {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.template-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.template-card:hover img, .template-card:focus-within img {
+    transform: scale(1.05);
+}
+
+.template-card h4 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: #ff851b;
+    transition: color 0.3s ease;
+}
+
+.template-card:hover h4, .template-card:focus-within h4 {
+    color: #ffcc00;
+}
+
+.template-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.cta-btn, .modal-cta-btn {
+    background: linear-gradient(145deg, #ff851b, #ff6f00);
+    padding: 15px 35px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease, transform 0.2s cubic-bezier(0.23, 1, 0.320, 1), box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(255, 133, 27, 0.3), 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    will-change: transform, box-shadow; /* Optimize for animations */
+}
+
+/* Creating a pseudo-element for a 3D effect and glow */
+.cta-btn::before, .modal-cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease-out;
+    z-index: -1;
+}
+
+/* Hover effect with a shine animation */
+.cta-btn:hover::before, .cta-btn:focus::before, 
+.modal-cta-btn:hover::before, .modal-cta-btn:focus::before {
+    left: 100%;
+}
+
+.cta-btn:hover, .cta-btn:focus, 
+.modal-cta-btn:hover, .modal-cta-btn:focus {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 133, 27, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #ff9800, #ff5722);
+}
+
+.cta-btn:active, .modal-cta-btn:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 10px rgba(255, 133, 27, 0.6);
+}
+
+/* Ripple effect for click interaction */
+.cta-btn::after, .modal-cta-btn::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: rippleEffect 0.7s ease-out;
+    opacity: 0;
+}
+
+@keyframes rippleEffect {
+    to {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+
+/* Custom focus styling for accessibility */
+.cta-btn:focus, .modal-cta-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 133, 27, 0.5), 0 10px 20px rgba(255, 133, 27, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding a subtle pulse animation for idle state to draw attention */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.cta-btn.idle-pulse, .modal-cta-btn.idle-pulse {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .cta-btn, .modal-cta-btn {
+        padding: 12px 24px;
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cta-btn, .modal-cta-btn {
+        width: 100%;
+        max-width: none;
+        padding: 14px 20px;
+    }
+}
+
+/* If you want to disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .cta-btn, .modal-cta-btn, 
+    .cta-btn::before, .cta-btn::after, 
+    .modal-cta-btn::before, .modal-cta-btn::after {
+        transition: none;
+        animation: none;
+    }
+}
+/* Modal Styles with enhanced visual feedback */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Adjusted for better centering on smaller screens */
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    animation: modalOpen 0.5s ease-out forwards;
+}
+
+@keyframes modalOpen {
+    from {opacity: 0; transform: scale(0.7);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+.modal-content video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #ff851b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Accessibility Enhancements */
+:focus {
+    outline: 3px solid #ff851b;
+    outline-offset: 2px;
+}
+
+/* Ensure modal content is accessible */
+.modal-content:focus {
+    outline: none; /* Remove default focus to style manually */
+}
+
+.modal-content * {
+    transition: none; /* Prevent transitions from interfering with focus states */
+}
+
+.modal-content *:focus {
+    outline: 3px solid #ff851b;
+    outline-offset: 2px;
+}
+
+/* Enhanced for screen readers */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+/* Responsive Design Enhancements */
+@media only screen and (max-width: 768px) {
+    .templates-section {
+        padding: 80px 20px;
+    }
+
+    .template-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .template-card {
+        padding: 20px;
+    }
+
+    .cta-btn, .modal-cta-btn {
+        padding: 10px 18px;
+        font-size: 0.95em;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 15% auto;
+        padding: 20px;
+    }
+
+    .modal-content video {
+        max-width: 90%;
+    }
+
+    .templates-section h2 {
+        font-size: 2em;
+    }
+
+    .template-category h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* Animation for category reveal*/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.template-category {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+
+/* Adding a subtle background animation for the template section */
+@keyframes backgroundPan {
+    from {
+        background-position: center center;
+    }
+    to {
+        background-position: center center;
+    }
+}
+
+.templates-section {
+    background-size: cover;
+    animation: backgroundPan 30s linear infinite;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Footer social icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 2em;
+    color: #7fdbff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover, .social-icons a:focus {
+    color: #ff851b;
+    transform: scale(1.2);
+    outline: none;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #001f3f;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .template-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .template-card {
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 15% auto;
+    }
+
+    header nav {
+        padding: 0 20px;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    .cta-btn, .modal-cta-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .templates-section {
+        padding: 80px 20px;
+    }
+
+    .modal-content video {
+        width: 100%;
+    }
+}
+
+/* Accessibility Enhancements */
+:focus {
+    outline: 3px solid #ff851b;
+}
+
+/* Ensure that focusable elements inside modals are visible */
+.modal-content :focus {
+    outline-offset: 2px;
+}
+
+/* Hide visually but keep accessible for screen readers */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+/* Animation for modal opening */
+@keyframes modalOpen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.modal[style*="display: block"] {
+    display: block !important;
+    animation: modalOpen .3s;
+}
+
+/* Ensure high contrast for text over video or images */
+.template-card h4, .modal-content h3 {
+    text-shadow: 1px 1px 2px black;
+}

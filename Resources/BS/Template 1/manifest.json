@@ -1,0 +1,21 @@
+{
+    "name": "561Records",
+    "short_name": "561Records",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#e8491d",
+    "description": "A leading record label and recording company empowering artists worldwide.",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | Gaazzeebo LLC</title>
+<<<<<<< HEAD
+    <!-- Header styles-->
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+=======
+>>>>>>> 0edfcf7e984402c408466e6df6dcdf4f50ad74a7
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="contact.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="MobileDev.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/gaazzeebo-logo.png" alt="Gaazzeebo Logo" class="small-logo">
+
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="templates.html" class="templates">Templates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="templates.html">Templates</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you're interested in working with us, please fill out the form below.</p>
+
+            <form class="contact-form" id="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+                <label for="type">Type of Website:</label>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="personalized">Fully Personalized</option>
+                    <option value="template">Pre-Developed (Customizable)</option>
+                </select>
+
+                <label for="template">If Template, Choose Your Option (Price Range):</label>
+                <select id="template" name="template" disabled>
+                    <option value="" disabled selected>Select a pre-developed template</option>
+                    <option value="business">Business Website ($3,000 - $10,000)</option>
+                    <option value="ecommerce">E-Commerce Website ($5,000 - $15,000)</option>
+                    <option value="portfolio">Portfolio Website ($1,500 - $4,000)</option>
+                    <option value="blog">Blog Website ($1,000 - $3,000)</option>
+                </select>
+
+                <label for="details">Additional Details/Requirements:</label>
+                <textarea id="details" name="details" rows="5" placeholder="Provide any specific requirements or details about the website you want"></textarea>
+
+                <label for="budget" class="range-label">Estimated Budget:</label>
+                <input type="range" id="budget" name="budget" class="budget-range" min="1000" max="20000" step="500" value="5000">
+                <p class="range-value">Estimated Budget: $<span id="budgetValue">5000</span></p>
+
+                <label for="timeline">Preferred Timeline:</label>
+                <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 months" required>
+
+                <button type="submit" class="cta-btn">Submit Request</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <h2>Thank you for choosing Gaazzeebo LLC!</h2>
+                <p>Your request has been successfully submitted.</p>
+                <div class="glowing-border">
+                    <p>Expect us to get back to you shortly with a personalized offer!</p>
+                </div>
+                <div class="floating-icons">
+                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+        </div>
+        <div class="particle-bg">
+            <div class="particle" style="top: 10%; left: 15%;"></div>
+            <div class="particle" style="top: 50%; left: 20%;"></div>
+            <div class="particle" style="top: 30%; left: 40%;"></div>
+            <div class="particle" style="top: 80%; left: 60%;"></div>
+            <div class="particle" style="top: 40%; left: 80%;"></div>
+            <div class="particle" style="top: 20%; left: 70%;"></div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2024 Gaazzeebo LLC. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="social-call">Connect with us:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gaazzeebo" target="_blank" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f glowing-icon"></i></a>
+                <a href="https://www.twitter.com/gaazzeebo" target="_blank" aria-label="Follow us on X"><i class="fab fa-twitter glowing-icon"></i></a>
+                <a href="https://www.instagram.com/gaazzeebo" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram glowing-icon"></i></a>
+                <a href="https://www.linkedin.com/company/gaazzeebo" target="_blank" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in glowing-icon"></i></a>
+                <a href="https://www.youtube.com/channel/gaazzeebo" target="_blank" aria-label="Watch us on YouTube"><i class="fab fa-youtube glowing-icon"></i></a>
+                <a href="https://www.tiktok.com/@gaazzeebo" target="_blank" aria-label="Follow us on TikTok"><i class="fab fa-tiktok glowing-icon"></i></a>
+            </div>
+            <p class="tagline">Innovation at your fingertips.</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script> <!-- Link to external JavaScript file -->
+    <script>
+        // Toggle mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close the mobile menu by default
+        document.addEventListener('DOMContentLoaded', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

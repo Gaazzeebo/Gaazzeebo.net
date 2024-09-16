@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaazzeebo LLC | Innovative Software Solutions</title>
+
+    <!-- Company Logo -->
+    <link rel="icon" href="image/gaazzeebo-logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Header styles-->
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="MobileDev.css">
+
+    <style>
+        /* General reset and body */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.small-logo {
+    height: 40px; /* Adjust size as necessary */
+    width: auto;
+    margin-right: 10px;
+}
+
+.rainbow-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 3px;
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    margin: 0; /* Reset default margin */
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+
+        /* Hero section */
+        .hero {
+            background: url('image/hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .hero-content {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #7fdbff;
+        }
+
+        .hero h2 .highlight {
+            color: #ff851b;
+            animation: colorChange 4s infinite alternate;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin: 20px 0;
+            color: #e0e0e0;
+        }
+
+        .cta-btn {
+    /* Base styles */
+    background: linear-gradient(45deg, #ff851b, #ff4500);
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    
+    /* Shadow for depth */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    
+    /* Smooth transition for all effects */
+    transition: all 0.3s ease;
+    
+    /* Text styling */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    /* Prevent text selection for better UX */
+    user-select: none;
+    
+    /* Ensure it's above other elements */
+    position: relative;
+    z-index: 1;
+}
+
+.cta-btn::before {
+    /* Creating a subtle inner shadow effect */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.cta-btn:hover {
+    /* Enhanced hover effects */
+    background: linear-gradient(45deg, #ffcc00, #ff851b);
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover::before {
+    opacity: 1;
+}
+
+.cta-btn:active {
+    /* Effect when button is clicked */
+    transform: scale(1.05) translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #e67e22, #ff4500);
+}
+
+/* Optional: If you want a glow effect on focus for accessibility */
+.cta-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 133, 27, 0.5);
+}
+
+        /* Enhanced Particle Background */
+        .particle-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff851b, #7fdbff, #ff0000, #4b0082);
+            box-shadow: 0 0 10px #7fdbff, 0 0 20px #ff851b, 0 0 30px #ff0000;
+            animation: moveParticle 12s linear infinite, glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveParticle {
+            0% { transform: translate(0, 0); opacity: 0; }
+            10% { opacity: 1; }
+            100% { transform: translate(1000px, 1000px); opacity: 0; }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #ff851b, 0 0 20px #7fdbff, 0 0 30px #ff0000; }
+            100% { box-shadow: 0 0 20px #7fdbff, 0 0 40px #ff851b, 0 0 60px #ff0000; }
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            padding: 100px 50px;
+            background-color: #001f3f;
+            text-align: center;
+        }
+
+        .features .feature {
+            padding: 30px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .features .feature:hover {
+            transform: translateY(-15px);
+            background-color: #222;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Icons above feature boxes */
+        .feature img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .features h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #7fdbff;
+        }
+
+        .features h3 .highlight {
+            color: #ff851b;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            padding: 80px 50px;
+            background-color: #222;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff851b;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/gaazzeebo-logo.png" alt="Gaazzeebo Logo" class="small-logo">
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <!-- Hamburger menu (mobile) -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="templates.html">Templates</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your Partner for <span class="highlight">Innovative</span> Web Solutions</h2>
+                <p>We design, develop, and deliver cutting-edge websites and software solutions tailored to your business needs.</p>
+                <a href="services.html" class="cta-btn">Explore Our Services</a>
+            </div>
+            <!-- Enhanced particle animation -->
+            <div class="particle-bg">
+                <div class="particle" style="top: 20%; left: 15%;"></div>
+                <div class="particle" style="top: 40%; left: 25%;"></div>
+                <div class="particle" style="top: 60%; left: 50%;"></div>
+                <div class="particle" style="top: 80%; left: 70%;"></div>
+                <div class="particle" style="top: 10%; left: 90%;"></div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="image/custom-web-icon.png" alt="Custom Web Design Icon">
+                <h3><span class="highlight">Custom</span> Web Design</h3>
+                <p>Responsive designs that reflect your brand, optimized for all devices.</p>
+            </div>
+            <div class="feature">
+                <img src="image/sw-dev-icon.png" alt="Software Development Icon">
+                <h3>Advanced <span class="highlight">Software</span> Development</h3>
+                <p>We build powerful applications with the latest technologies.</p>
+            </div>
+            <div class="feature">
+                <img src="image/site-maintenance-icon.png" alt="Site Maintenance Icon">
+                <h3>Comprehensive <span class="highlight">Maintenance</span></h3>
+                <p>We ensure your site stays secure, fast, and always up-to-date.</p>
+            </div>
+        </section>
+
+        <!-- New Call to Action Section -->
+        <section class="cta-section">
+            <h2>Why Choose Gaazzeebo LLC?</h2>
+            <p>At Gaazzeebo, we prioritize customer satisfaction with solutions that are tailored to your business. Our innovative web designs, powerful software development, and top-notch maintenance services ensure your business stays ahead in the digital world. Let's make your vision a reality!</p>
+            <a href="contact.html" class="cta-btn">Get Started Today</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2024 Gaazzeebo LLC. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="social-call">Connect with us:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gaazzeebo" target="_blank" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f glowing-icon"></i></a>
+                <a href="https://www.twitter.com/gaazzeebo" target="_blank" aria-label="Follow us on X"><i class="fab fa-twitter glowing-icon"></i></a>
+                <a href="https://www.instagram.com/gaazzeebo" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram glowing-icon"></i></a>
+                <a href="https://www.linkedin.com/company/gaazzeebo" target="_blank" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in glowing-icon"></i></a>
+                <a href="https://www.youtube.com/channel/gaazzeebo" target="_blank" aria-label="Watch us on YouTube"><i class="fab fa-youtube glowing-icon"></i></a>
+                <a href="https://www.tiktok.com/@gaazzeebo" target="_blank" aria-label="Follow us on TikTok"><i class="fab fa-tiktok glowing-icon"></i></a>
+            </div>
+            <p class="tagline">Innovation at your fingertips.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close the mobile menu by default
+        document.addEventListener('DOMContentLoaded', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

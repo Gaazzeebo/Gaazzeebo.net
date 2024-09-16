@@ -1,0 +1,16 @@
+{
+    "questions": [
+        {
+            "keywords": ["who is jack", "tell me about jack", "jack's role"],
+            "response": "Jack Liselli is the founder and CEO of GAZEBO Inc. He has a double degree in electrical and computer engineering and is highly involved in the company’s operations."
+        },
+        {
+            "keywords": ["jack's background", "jack's experience", "jack's education"],
+            "response": "Jack Liselli is a double engineering graduate from Virginia in electrical and computer engineering, with extensive experience in both fields."
+        },
+        {
+            "keywords": ["jack's achievements", "jack's accomplishments", "what has jack done"],
+            "response": "Jack has founded GAZEBO Inc., successfully leading the company to its current state with 20 employees and growing."
+        }
+    ]
+}

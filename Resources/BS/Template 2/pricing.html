@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Equipment Pricing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Unique font for title -->
+    <link rel="stylesheet" href="pricing-style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>POS Equipment Pricing</h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">POS Info Search</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="micamp.html">MiCamp Solutions</a>
+                        </li>
+                    </ul>
+                    <button class="btn back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+                    <button class="btn dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container my-4">
+        <section class="search-section">
+            <input type="text" id="searchBar" class="form-control" placeholder="Search for devices...">
+            <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+        </section>
+        
+        <div class="table-section">
+            <h2 class="section-title">Devices</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Manufacturer</th>
+                        <th>Device</h>
+                        <th>Status</th>
+                        <th>Pricing</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="devicesTable"></tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2 class="section-title">Starter Kits</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Manufacturer</th>
+                        <th>Device</th>
+                        <th>Status</th>
+                        <th>Pricing</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="starterKitsTable"></tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2 class="section-title">Accessories</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Manufacturer</th>
+                        <th>Device</th>
+                        <th>Status</th>
+                        <th>Pricing</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="accessoriesTable"></tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2 class="section-title">Printers</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Manufacturer</th>
+                        <th>Device</th>
+                        <th>Status</th>
+                        <th>Pricing</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="printersTable"></tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2 class="section-title">Other Devices</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Manufacturer</th>
+                        <th>Device</th>
+                        <th>Status</th>
+                        <th>Pricing</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="otherDevicesTable"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 POS Info Search. All rights reserved.</p>
+    </footer>
+    <script src="pricing-script.js"></script>
+</body>
+</html>

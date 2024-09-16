@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carter Watts - Resume</title>
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.7;
+        color: #404040;
+        background: linear-gradient(to right, #f9f9f9, #e9e9e9);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .resume {
+        width: 800px;
+        max-width: 95%;
+        background: #fff;
+        margin: 40px 0;
+        padding: 50px 60px;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+        border-radius: 15px;
+        position: relative;
+    }
+    header {
+        background: #005f73;
+        padding: 20px 0;
+        margin: -50px -60px 40px;
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    h1 {
+        color: #ffffff;
+        margin: 0;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .contact-info {
+        color: #e0e0e0;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+    .nav-buttons {
+        margin-top: 20px;
+    }
+    .nav-button {
+        background-color: #0a9396;
+        color: white;
+        padding: 10px 15px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8em;
+        transition: background-color 0.3s, transform 0.1s;
+    }
+    .nav-button:hover, .nav-button:focus {
+        background-color: #001219;
+        transform: scale(1.05);
+    }
+    h2 {
+        color: #0a9396;
+        border-bottom: 2px solid #94d2bd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+    .section {
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    .section.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 30px;
+    }
+    li::before {
+        content: '✦';
+        color: #005f73;
+        position: absolute;
+        left: 0;
+        font-size: 1em;
+        top: 5px;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    .skill {
+        background: #e9d8a6;
+        padding: 8px 15px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 0.9em;
+        transition: transform 0.3s ease;
+    }
+    .skill:hover {
+        transform: scale(1.05);
+    }
+    .experience {
+        position: relative;
+        padding-left: 40px;
+    }
+    .experience::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background: #0a9396;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+    }
+    .experience h3 {
+        margin: 10px 0;
+        color: #001219;
+    }
+    .experience .job {
+        position: relative;
+    }
+    .experience .job::before {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: #94d2bd;
+        border-radius: 50%;
+        left: -35px;
+        top: 5px;
+    }
+    @keyframes slideIn {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    .section {
+        animation: slideIn 0.5s forwards;
+    }
+</style>
+</head>
+<body>
+<div class="resume">
+    <header>
+        <h1>Carter Watts</h1>
+        <div class="contact-info">
+            <p>14214 Cyber Pl. Tampa, FL 33613 | (719) 472 4055 | cartmwatts@gmail.com</p>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="scrollToSection('education')">Education</button>
+            <button class="nav-button" onclick="scrollToSection('experience')">Experience</button>
+            <button class="nav-button" onclick="scrollToSection('activities')">Activities</button>
+            <button class="nav-button" onclick="scrollToSection('skills')">Skills</button>
+        </div>
+    </header>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p><strong>University of Tampa, Tampa, Florida</strong> - Expected May 2025<br>
+        Bachelor of Science – Major in Finance, Minor in Accounting<br>
+        GPA: 3.7</p>
+        <p><strong>The Hill Academy High School, Caledon, Ontario</strong> - May 2022<br>
+        GPA: 4.2</p>
+    </section>
+
+    <section id="experience" class="section experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>JP Morgan Chase, New York, New York</h3>
+            <em>Mid Cap Investment Bank Business Manager</em> - June 2024 – August 2024
+            <ul>
+                <li>Processed 783 client coverage updates.</li>
+                <li>Reported deal flow, intensity, pipeline, and league tables.</li>
+                <li>Transitioned clients from commercial to investment bank.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Fisher Investments, Tampa, Florida</h3>
+            <em>Private Client Group Junior Associate</em> - January 2024 – April 2024
+            <ul>
+                <li>Connected with clients to formulate financial goals.</li>
+                <li>Shadowed divisions of the wealth management structure.</li>
+                <li>Researched market conditions and talking points for clients.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Grow Financial Credit Union, Tampa, Florida</h3>
+            <em>Financial Analyst</em> - April 2023 – August 2023
+            <ul>
+                <li>Modified processes to report uninsured deposits.</li>
+                <li>Generated a new tracking sequence to assess asset liability management.</li>
+                <li>United with the Treasury Department to monitor and forecast cash flows.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="activities" class="section">
+        <h2>Activities</h2>
+        <div class="activity">
+            <h3>Best Kept Capital, Tampa, Florida</h3>
+            <em>Hedge Fund Analyst</em> - August 2023 – May 2024
+            <ul>
+                <li>Screened companies to match portfolio risk.</li>
+                <li>Analyzed market conditions and created quarterly report to shareholders.</li>
+                <li>Led meetings with investor relations on potential investment opportunities.</li>
+            </ul>
+        </div>
+        <div class="activity">
+            <h3>Diversity Alliance, Caledon, Ontario</h3>
+            <em>Cofounder</em> - September 2020 – June 2021
+            <ul>
+                <li>Raised over $4,300 for Men's Health and Prostate Cancer.</li>
+                <li>Orchestrated events and activities for primary school students.</li>
+                <li>Created a donation fund for The National Indigenous Women's Resource Center.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Synergy</div>
+            <div class="skill">Xperience</div>
+            <div class="skill">Aqueduct</div>
+            <div class="skill">Dealworks</div>
+            <div class="skill">PowerBI</div>
+            <div class="skill">SalesForce</div>
+            <div class="skill">Excel</div>
+        </div>
+    </section>
+</div>
+
+<script>
+    function scrollToSection(id) {
+        const element = document.getElementById(id);
+        if(element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    document.addEventListener('scroll', function() {
+        document.querySelectorAll('.section').forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add('show');
+            }
+        });
+    });
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+</script>
+</body>
+</html>

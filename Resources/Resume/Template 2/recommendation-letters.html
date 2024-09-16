@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Letters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .pdf-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            height: 80vh;
+            max-width: 800px;
+        }
+
+        .pdf-container embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .card {
+            animation: fadeIn 1s ease-in-out;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .futuristic-text {
+            text-shadow: 0 0 5px #e6b800, 0 0 10px #e6b800, 0 0 20px #e6b800;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header, nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .scroll-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00ffea;
+        }
+
+        .scroll-to-top:hover {
+            box-shadow: 0 0 20px #ff4da6;
+        }
+
+        .btn-back {
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px #00ffea, 0 0 30px #00ffea, 0 0 40px #00ffea;
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .btn-back:hover {
+            box-shadow: 0 0 40px #ff4da6, 0 0 60px #ff4da6, 0 0 80px #ff4da6;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .pdf-container {
+                height: 60vh;
+            }
+
+            .btn-back {
+                padding: 8px 16px;
+                font-size: 14px;
+                width: 80%;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="shooting-stars"></div>
+    <div class="asteroids"></div>
+    <div class="galaxy-container">
+        <div class="galaxy-layer"><div class="galaxy"></div></div>
+        <div class="galaxy-layer"><div class="galaxy"></div></div>
+        <div class="galaxy-layer"><div class="galaxy"></div></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 class="futuristic-text">Jack Liselli</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#professional-summary">Professional Summary</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="index.html#awards">Awards</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="vmi-alumni.html">VMI Alumni</a></li>
+                    <li><a href="recommendation-letters.html">Recommendation Letters</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="card">
+                <button class="btn btn-back" onclick="location.href='index.html'"><i class="fas fa-arrow-left"></i> Back to Home</button>
+                <h2 class="futuristic-text">Recommendation Letters</h2>
+                <div class="pdf-container">
+                    <embed src="recommendation-letters.pdf" type="application/pdf" />
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jack Liselli. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Scroll to the top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/Hide Scroll-to-top button
+        window.addEventListener('scroll', function() {
+            const scrollButton = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 200) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+
+        // Create stars, asteroids, and shooting stars
+        function createSpaceElements() {
+            const starCount = 500;
+            const shootingStarCount = 10;
+            const asteroidCount = 30;
+
+            // Create stationary stars
+            for (let i = 0; i < starCount; i++) {
+                createStar();
+            }
+
+            // Create shooting stars
+            for (let i = 0; i < shootingStarCount; i++) {
+                createShootingStar();
+            }
+
+            // Create asteroids
+            for (let i = 0; i < asteroidCount; i++) {
+                createAsteroid();
+            }
+
+            // Create galaxy layers
+            createGalaxyLayers();
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            document.body.appendChild(star);
+        }
+
+        function createShootingStar() {
+            const shootingStar = document.createElement('div');
+            shootingStar.className = 'shooting-star';
+            shootingStar.style.left = `${Math.random() * 100}vw`;
+            shootingStar.style.top = `${Math.random() * 100}vh`;
+            shootingStar.style.animationDelay = `${Math.random() * 20}s`;
+            document.body.appendChild(shootingStar);
+        }
+
+        function createAsteroid() {
+            const asteroid = document.createElement('div');
+            asteroid.className = 'asteroid';
+            asteroid.style.left = `${Math.random() * 100}vw`;
+            asteroid.style.top = `${Math.random() * 100}vh`;
+            asteroid.style.animationDuration = `${Math.random() * 50 + 50}s`;
+            document.body.appendChild(asteroid);
+        }
+
+        function createGalaxyLayers() {
+            const galaxyContainer = document.querySelector('.galaxy-container');
+            for (let i = 0; i < 3; i++) {
+                const galaxyLayer = document.createElement('div');
+                galaxyLayer.className = 'galaxy-layer';
+                const galaxy = document.createElement('div');
+                galaxy.className = 'galaxy';
+                galaxyLayer.appendChild(galaxy);
+                galaxyContainer.appendChild(galaxyLayer);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', createSpaceElements);
+    </script>
+</body>
+</html>

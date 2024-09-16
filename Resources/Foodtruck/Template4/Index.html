@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+        section {
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+        }
+        .nav-dots {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        .nav-dot {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .nav-dot.active {
+            background: #3498db;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <div class="nav-dots">
+        <div class="nav-dot" data-target="home"></div>
+        <div class="nav-dot" data-target="about"></div>
+        <div class="nav-dot" data-target="menu"></div>
+        <div class="nav-dot" data-target="reviews"></div>
+        <div class="nav-dot" data-target="location"></div>
+    </div>
+
+    <section id="home" style="background: url('path-to-your-home-image.jpg') no-repeat center center; background-size: cover;">
+        <h1>Food Truck Delight</h1>
+    </section>
+
+    <section id="about" class="bg-blue-600">
+        <div class="max-w-lg text-center">
+            <h2 class="text-4xl font-bold mb-4">About Us</h2>
+            <p class="text-lg">Gourmet on the go. Bringing the best flavors to your street corner.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="bg-green-600">
+        <div class="max-w-4xl">
+            <h2 class="text-4xl font-bold mb-4">Our Menu</h2>
+            <div id="menuItems" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-yellow-600">
+        <div class="max-w-lg text-center">
+            <h2 class="text-4xl font-bold mb-4">What People Say</h2>
+            <div id="reviewList" class="space-y-4">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="bg-purple-600">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Find Us</h2>
+            <div id="map" class="h-64 w-full bg-gray-300"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

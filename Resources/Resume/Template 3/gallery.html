@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - JVC-Carolina, Inc</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-background"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Our Project Gallery</h1>
+            <button class="btn-back-home" onclick="location.href='index.html'">Back to Home</button>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search Projects...">
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Explore Our Work</h2>
+            <div id="gallery-grid" class="gallery-grid">
+                <div class="gallery-item" onclick="viewProjectDetail('project1')">
+                    <img src="project1.jpg" alt="Boulder Garden">
+                    <div class="gallery-info">
+                        <h3>Boulder Garden in Durham, NC</h3>
+                        <p>Modern living with classic charm.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project2')">
+                    <img src="project2.jpg" alt="Geer House Apartments">
+                    <div class="gallery-info">
+                        <h3>Geer House Apartments in Durham, NC</h3>
+                        <p>A blend of style and comfort.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project3')">
+                    <img src="project3.jpg" alt="Gutheries Chicken & TD Bank">
+                    <div class="gallery-info">
+                        <h3>Gutheries Chicken & TD Bank, Raleigh, NC</h3>
+                        <p>Commercial excellence at its finest.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project4')">
+                    <img src="project4.jpg" alt="Mill Creek Townhomes">
+                    <div class="gallery-info">
+                        <h3>Mill Creek Townhomes, Raleigh, NC</h3>
+                        <p>Luxury living in the heart of the city.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project5')">
+                    <img src="project5.jpg" alt="Parkview at Cameron Pond">
+                    <div class="gallery-info">
+                        <h3>Parkview at Cameron Pond, Cary, NC</h3>
+                        <p>Where nature meets elegance.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project6')">
+                    <img src="project6.jpg" alt="The Berkeley">
+                    <div class="gallery-info">
+                        <h3>The Berkeley, Durham, NC</h3>
+                        <p>Redefining urban sophistication.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project7')">
+                    <img src="project7.jpg" alt="Carolina Arbors">
+                    <div class="gallery-info">
+                        <h3>Carolina Arbors, Raleigh, NC</h3>
+                        <p>Retirement living reimagined.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project8')">
+                    <img src="project8.jpg" alt="Greenway Village">
+                    <div class="gallery-info">
+                        <h3>Greenway Village, Chapel Hill, NC</h3>
+                        <p>Contemporary design in a tranquil setting.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project9')">
+                    <img src="project9.jpg" alt="Southpoint Mall Expansion">
+                    <div class="gallery-info">
+                        <h3>Southpoint Mall Expansion, Durham, NC</h3>
+                        <p>A commercial hub with flair.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="viewProjectDetail('project10')">
+                    <img src="project10.jpg" alt="Brightleaf Square Renovation">
+                    <div class="gallery-info">
+                        <h3>Brightleaf Square Renovation, Durham, NC</h3>
+                        <p>Historic preservation meets modern luxury.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail View with Image Carousel -->
+    <div id="project-detail" class="project-detail">
+        <div class="project-detail-content">
+            <span class="close" onclick="closeProjectDetail()">&times;</span>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="placeholder.jpg" id="project-detail-img-1" alt="Project Detail Image 1">
+                    <img src="placeholder.jpg" id="project-detail-img-2" alt="Project Detail Image 2">
+                    <img src="placeholder.jpg" id="project-detail-img-3" alt="Project Detail Image 3">
+                    <img src="placeholder.jpg" id="project-detail-img-4" alt="Project Detail Image 4">
+                    <img src="placeholder.jpg" id="project-detail-img-5" alt="Project Detail Image 5">
+                </div>
+            </div>
+            <div class="project-detail-info">
+                <h2 id="project-detail-title">Project Title</h2>
+                <p id="project-detail-description">Project description goes here...</p>
+                <ul id="project-detail-info-list">
+                    <li>Location: Example City</li>
+                    <li>Completion Date: January 2024</li>
+                    <li>Key Features: Sustainable design, advanced technology, etc.</li>
+                    <li>Client Testimonial: "Working with JVC-Carolina was a seamless and rewarding experience."</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
