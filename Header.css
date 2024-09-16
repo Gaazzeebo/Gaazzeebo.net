@@ -1,22 +1,22 @@
-        /* General body styling */
-        body {
-            font-family: 'Orbitron', sans-serif; /* Cutting-edge futuristic font */
-            background-color: #0d0d0d;
-            color: #e0e0e0;
-            line-height: 1.6;
-            scroll-behavior: smooth;
-            position: relative;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure footer sticks to the bottom */
-        }
+/* General body styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /* Header */
 header {
-    background-color: #001f3f!important;
+    background-color: #001f3f !important;
     color: white !important;
     padding: 5px 0 !important;
     position: fixed !important;
@@ -33,42 +33,21 @@ header nav {
     padding: 0 50px !important;
 }
 
+/* Logo styling */
 .logo {
     display: flex !important;
     align-items: center !important;
 }
 
 .small-logo {
-    height: 40px !important; /* Adjust size as necessary */
+    height: 60px !important; /* Increased size */
     width: auto !important;
     margin-right: 10px !important;
 }
 
-.logo h1 {
-    font-family: 'Roboto', sans-serif !important; 
-    font-weight: bold !important;
-    font-size: 2em !important;
-    letter-spacing: 3px !important;
-    margin: 0 !important; /* Reset default margin */
-}
+/* Removed Gaazzeebo LLC text and rainbow styling */
 
-.rainbow-text {
-    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
-
-@keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 0;
-    }
-}
-
+/* Navigation Links */
 .nav-links {
     list-style-type: none !important;
     display: flex !important;
@@ -103,7 +82,7 @@ header nav {
     }
 
     .nav-links {
-        display: none !important; /* Hide by default for mobile, show with JS */
+        display: none !important; /* Hide by default for mobile */
         flex-direction: column !important;
         width: 100% !important;
         position: absolute !important;
@@ -126,29 +105,17 @@ header nav {
         padding: 11px 0 !important;
     }
 
-    .logo h1 {
-        font-size: 1.5em !important; /* Reduce font size of the logo text */
-    }
-
     .small-logo {
-        height: 30px !important; /* Reduce the size of the logo image */
+        height: 50px !important; /* Slightly smaller on mobile */
     }
 
     .nav-links a {
-        font-size: 1em !important; /* Reduce the font size of navigation links */
+        font-size: 1em !important; /* Reduce font size of navigation links */
     }
 
-    /* If you want to reduce the padding between the elements in the navigation links */
     .nav-links {
         gap: 15px !important; /* Reduce gap between nav links */
     }
-}
-
-/* Hamburger menu for mobile */
-.menu-toggle {
-    display: none !important;
-    font-size: 2em !important;
-    cursor: pointer !important;
 }
 
 /* Hamburger Menu (mobile) */
@@ -167,7 +134,7 @@ header nav {
 
 /* Mobile Menu */
 .mobile-menu {
-    display: none !important; /* Hidden by default */
+    display: none !important;
     flex-direction: column !important;
     align-items: center !important;
     background-color: #001f3f !important;
@@ -180,20 +147,20 @@ header nav {
 }
 
 .mobile-menu.active {
-    display: flex !important; /* Display flex when the menu is active */
+    display: flex !important;
 }
 
 .mobile-menu a {
     padding: 10px 0 !important;
     text-align: center !important;
     width: 100% !important;
-    color: white !important; /* White font for easier readability */
+    color: white !important;
     font-size: 1.1em !important;
-    background-color: #001f3f !important; /* Matches header background */
+    background-color: #001f3f !important;
     transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 .mobile-menu a:hover {
-    background-color: #ff851b !important; /* Orange background on hover */
-    color: white !important; /* White font on hover for visibility */
+    background-color: #ff851b !important;
+    color: white !important;
 }
