@@ -71,96 +71,79 @@ header nav {
 
 /* Hamburger menu for mobile */
 .menu-toggle {
-    display: none !important;
-    font-size: 2em !important;
-    cursor: pointer !important;
+    display: none; /* Default: hide */
+    font-size: 2em;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block !important;
+        display: block; /* Show hamburger on mobile */
     }
 
     .nav-links {
-        display: none !important; /* Hide by default for mobile */
-        flex-direction: column !important;
-        width: 100% !important;
-        position: absolute !important;
-        top: 60px !important;
-        left: 0 !important;
-        background-color: #001f3f !important;
-        padding: 20px 0 !important;
+        display: none; /* Hide desktop nav */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #001f3f;
+        padding: 20px 0;
     }
 
     .nav-links.active {
-        display: flex !important;
+        display: flex; /* Show when hamburger is clicked */
     }
     
     .nav-links li {
-        text-align: center !important;
-        margin: 15px 0 !important;
+        text-align: center;
+        margin: 15px 0;
     }
 
-    header {
-        padding: 11px 0 !important;
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
     }
 
-    .small-logo {
-        height: 50px !important; /* Slightly smaller on mobile */
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #ff851b;
+        margin: 4px 0;
     }
-
-    .nav-links a {
-        font-size: 1em !important; /* Reduce font size of navigation links */
-    }
-
-    .nav-links {
-        gap: 15px !important; /* Reduce gap between nav links */
-    }
-}
-
-/* Hamburger Menu (mobile) */
-.hamburger {
-    display: none !important;
-    flex-direction: column !important;
-    cursor: pointer !important;
-}
-
-.hamburger div {
-    width: 25px !important;
-    height: 3px !important;
-    background-color: #ff851b !important;
-    margin: 4px 0 !important;
 }
 
 /* Mobile Menu */
 .mobile-menu {
-    display: none !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    background-color: #001f3f !important;
-    position: absolute !important;
-    top: 60px !important;
-    right: 0 !important;
-    width: 100% !important;
-    padding: 10px 0 !important;
-    transition: max-height 0.3s ease-in-out !important;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001f3f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .mobile-menu.active {
-    display: flex !important;
+    display: flex; /* Make mobile menu visible */
 }
 
 .mobile-menu a {
-    padding: 10px 0 !important;
-    text-align: center !important;
-    width: 100% !important;
-    color: white !important;
-    font-size: 1.1em !important;
-    background-color: #001f3f !important;
-    transition: background-color 0.3s ease, color 0.3s ease !important;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1.1em;
+    background-color: #001f3f;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .mobile-menu a:hover {
-    background-color: #ff851b !important;
-    color: white !important;
+    background-color: #ff851b;
+    color: white;
 }
