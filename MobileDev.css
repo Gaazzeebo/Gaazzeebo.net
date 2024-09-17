@@ -57,7 +57,72 @@
     font-size: 1.1em;
     background-color: #001f3f; /* Matches header background */
     transition: background-color 0.3s ease, color 0.3s ease;
+}/* Hamburger Menu (mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ff851b;
+    margin: 4px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    background-color: #001f3f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    display: flex; /* Display flex when the menu is active */
+}
+
+.mobile-menu a {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    color: white; /* White font for easier readability */
+    font-size: 1.1em;
+    background-color: #001f3f; /* Matches header background */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    background-color: #ff851b; /* Orange background on hover */
+    color: white; /* White font on hover for visibility */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide desktop nav on mobile */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+
+    .mobile-menu {
+        display: none; /* Hide mobile menu initially */
+    }
+
+    .mobile-menu.active {
+        display: flex; /* Show the mobile menu when active */
+    }
+}
+
 
 .mobile-menu a:hover {
     background-color: #ff851b; /* Orange background on hover */

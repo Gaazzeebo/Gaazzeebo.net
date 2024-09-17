@@ -87,20 +87,27 @@ header nav {
     margin: 4px 0;
 }
 
-/* Hamburger menu for mobile */
+/* Hide desktop navigation on mobile and show hamburger menu */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show hamburger on mobile */
+    .nav-links {
+        display: none !important; /* Hide desktop nav on mobile */
     }
 
-
+    .menu-toggle {
+        display: block !important; /* Show hamburger menu */
+    }
 
     .hamburger {
-        display: flex; /* Show hamburger icon */
+        display: flex !important; /* Show hamburger icon */
     }
-}
 
-/* Mobile menu button interaction */
-.menu-toggle.active + .nav-links {
-    display: flex;
+    .mobile-menu {
+        display: none; /* Hide mobile menu by default */
+    }
+
+    .mobile-menu.active {
+        display: flex !important; /* Show mobile menu when active */
+        flex-direction: column;
+        align-items: center;
+    }
 }
