@@ -233,6 +233,10 @@ header nav {
     transition: all 0.3s ease, transform 0.3s cubic-bezier(.25,.8,.25,1);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Set a max-width to control card size */
+    width: 100%;
 }
 
 .template-card::before {
@@ -257,15 +261,22 @@ header nav {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
-.template-card img {
-    width: 100%;
-    height: auto;
+/* Video Specific Styling */
+.template-card .video-container {
+    width: 100px; /* Fixed width for the video window */
+    height: 100px; /* Fixed height for the video window */
+    overflow: hidden;
+    margin: 0 auto 15px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    position: relative;
 }
 
-.template-card:hover img, .template-card:focus-within img {
-    transform: scale(1.05);
+.template-card .video-container iframe, 
+.template-card .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the area without stretching */
+    border-radius: 10px;
 }
 
 .template-card h4 {
@@ -283,6 +294,12 @@ header nav {
     font-size: 1.1em;
     margin-bottom: 20px;
     color: #ddd;
+}
+
+/* Ensure scaling doesn't affect the video size */
+.template-card:hover .video-container, 
+.template-card:focus-within .video-container {
+    transform: none; /* Override any transform on hover to keep video size consistent */
 }
 
 .cta-btn, .modal-cta-btn {
