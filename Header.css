@@ -162,25 +162,7 @@ header nav {
     text-decoration: underline !important;
 }
 
-/* Mobile Styling */
-.menu-toggle {
-    display: none; /* Default: hide */
-    font-size: 2em;
-    cursor: pointer;
-}
 
-.hamburger {
-    display: none; /* Hide hamburger by default */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #ff851b;
-    margin: 4px 0;
-}
 
 /* Hamburger menu for mobile */
 @media (max-width: 768px) {
@@ -213,3 +195,18 @@ header nav {
     }
 }
 
+/* Mobile menu button interaction */
+.menu-toggle.active + .nav-links {
+    display: flex;
+}
+
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+}
+
+/* Mobile menu button interaction */
+.menu-toggle.active + .nav-links {
+    display: flex;
+}
