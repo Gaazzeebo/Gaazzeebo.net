@@ -93,25 +93,7 @@ header nav {
         display: block; /* Show hamburger on mobile */
     }
 
-    .nav-links {
-        display: none; /* Hide desktop nav */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #001f3f;
-        padding: 20px 0;
-    }
 
-    .nav-links.active {
-        display: flex; /* Show when hamburger is clicked */
-    }
-
-    .nav-links li {
-        text-align: center;
-        margin: 15px 0;
-    }
 
     .hamburger {
         display: flex; /* Show hamburger icon */
