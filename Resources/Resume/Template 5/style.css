@@ -1,0 +1,279 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #FFF;
+  background-color: #000; /* Set background to black */
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Particles Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Sidebar Styles */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Full width when expanded */
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.9);
+  transition: width 0.3s ease-in-out;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+#sidebar.collapsed {
+  width: 60px; /* Narrow width when collapsed */
+}
+
+#sidebar .logo {
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#sidebar .logo img {
+  max-width: 80%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#sidebar.collapsed .logo img {
+  transform: rotate(-90deg);
+}
+
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar nav ul li {
+  border-bottom: 1px solid #444;
+}
+
+#sidebar nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #FFD700;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+#sidebar nav ul li a i {
+  min-width: 30px;
+  text-align: center;
+}
+
+#sidebar nav ul li a .nav-text {
+  margin-left: 15px;
+}
+
+#sidebar.collapsed nav ul li a .nav-text {
+  display: none; /* Hide text when collapsed */
+}
+
+#sidebar nav ul li a:hover {
+  background-color: #555;
+  color: #FF0000;
+}
+
+#sidebar.collapsed nav ul li a {
+  justify-content: flex-end;
+  padding: 15px 10px;
+}
+
+#sidebar.collapsed nav ul li a i {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Main Content Styles */
+#main-content {
+  margin-left: 250px; /* Matches the expanded sidebar width */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#sidebar.collapsed ~ #main-content {
+  margin-left: 60px; /* Matches the collapsed sidebar width */
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Showcase Styles */
+.showcase {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url('W-Banner2.png');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  position: relative;
+}
+
+.showcase::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+.showcase .headshot {
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  left: 26px;
+  top: 66px;
+}
+
+.showcase h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.showcase p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.showcase .btn {
+  background: #FF0000;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.showcase .btn:hover {
+  background: #cc0000;
+}
+
+/* Card Styles */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-left: 5px solid #FF0000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+.card h2 {
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.card h3 span {
+  font-weight: normal;
+  color: #CCC;
+  font-size: 14px;
+  display: block;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background: #FF0000;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Experience Entry */
+.experience-entry {
+  margin-bottom: 20px;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #FF0000;
+  color: #FFF;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background: #cc0000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #sidebar {
+      width: 60px;
+  }
+
+  #sidebar.collapsed {
+      width: 60px;
+  }
+
+  #sidebar.collapsed ~ #main-content {
+      margin-left: 60px;
+  }
+
+  #main-content {
+      margin-left: 60px;
+  }
+
+  .showcase h1 {
+      font-size: 36px;
+  }
+
+  .showcase p {
+      font-size: 18px;
+  }
+
+  .card {
+      padding: 15px;
+  }
+}
