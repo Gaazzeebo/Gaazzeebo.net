@@ -25,19 +25,44 @@ typeSelect.addEventListener('change', function () {
 });
 
 // Show success message after form submission
+// Show success message after form submission
 const form = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
 
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent actual form submission
-    successMessage.style.display = 'block';
-
-    setTimeout(() => {
-        successMessage.style.display = 'none';
-    }, 6000); // Display message for 6 seconds
-
-    form.reset(); // Reset the form after submission
+    
+    const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        type: form.type.value,
+        template: form.template.value || 'N/A',
+        details: form.details.value,
+        budget: form.budget.value,
+        timeline: form.timeline.value
+    };
+    
+    fetch('https://f2jg3wwg5c.execute-api.us-east-2.amazonaws.com/prod', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (response.ok) {
+            successMessage.style.display = 'block';
+            form.reset(); // Reset the form after submission
+        } else {
+            alert('There was an error submitting the form. Please try again later.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form. Please try again later.');
+    });
 });
+
 
 // Interactive particle effect based on mouse movement
 const particleBg = document.querySelector('.particle-bg');
